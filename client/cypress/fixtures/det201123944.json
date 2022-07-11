@@ -1,0 +1,847 @@
+{
+    "data": {
+        "id": 201123944,
+        "name": "Reebok Kinetica II Edge sneakers in beige and black",
+        "description": "Sneakers by <a href=\"/men/a-to-z-of-brands/reebok/cat/?cid=5227\"><strong>Reebok</strong></a><br><ul><li>New-season MVPs</li><li>Low-profile design</li><li>Pull tabs easy entry</li><li>Lace-up fastening</li><li>Padded tongue and cuff</li><li>Signature Reebok branding</li><li>Adjustable toggle detail</li><li>Flat sole</li><li>Textured grip tread</li></ul>",
+        "alternateNames": [
+            {
+                "locale": "en-GB",
+                "title": "Reebok Kinetica II Edge trainers in beige and black"
+            },
+            {
+                "locale": "de-DE",
+                "title": "Reebok – Kinetica II Edge – Sneaker in Beige und Schwarz"
+            },
+            {
+                "locale": "en-US",
+                "title": "Reebok Kinetica II Edge sneakers in beige and black"
+            }
+        ],
+        "localisedData": [
+            {
+                "locale": "en-GB",
+                "title": "Reebok Kinetica II Edge trainers in beige and black",
+                "pdpUrl": "https://www.asos.com/reebok/reebok-kinetica-ii-edge-trainers-in-beige-and-black/prd/201123944"
+            },
+            {
+                "locale": "en-US",
+                "title": "Reebok Kinetica II Edge sneakers in beige and black",
+                "pdpUrl": "https://www.asos.com/us/reebok/reebok-kinetica-ii-edge-sneakers-in-beige-and-black/prd/201123944"
+            },
+            {
+                "locale": "de-DE",
+                "title": "Reebok – Kinetica II Edge – Sneaker in Beige und Schwarz",
+                "pdpUrl": "https://www.asos.com/de/reebok/reebok-kinetica-ii-edge-sneaker-in-beige-und-schwarz/prd/201123944"
+            }
+        ],
+        "gender": "Men",
+        "productCode": "109778847",
+        "pdpLayout": "Footwear",
+        "brand": {
+            "brandId": 2988,
+            "name": "Reebok",
+            "description": "Since 1895, <a href=\"/men/a-to-z-of-brands/reebok/cat/?cid=5227\"><strong>Reebok</strong></a>'s ancestor company has been developing their line of running shoes and sneakers. With the brand launched in its own right in 1958, <a href=\"/men/a-to-z-of-brands/reebok/cat/?cid=5227\"><strong>Reebok</strong></a> has aligned themselves with some of the world's top athletes, continually building upon their own heritage and authenticity through high performance credentials and innovative technology."
+        },
+        "sizeGuide": null,
+        "sizeGuideApiUrl": null,
+        "isNoSize": false,
+        "isOneSize": false,
+        "isInStock": true,
+        "countryOfManufacture": null,
+        "hasVariantsWithProp65Risk": true,
+        "webCategories": [],
+        "variants": [
+            {
+                "id": 201123952,
+                "name": "Reebok Kinetica II Edge sneakers in beige and black",
+                "sizeId": 434318,
+                "brandSize": "US 7",
+                "sizeDescription": "US7",
+                "displaySizeText": "US 7 - US7",
+                "sizeOrder": 80,
+                "sku": "109793619",
+                "isLowInStock": true,
+                "isInStock": true,
+                "isAvailable": true,
+                "colourWayId": 201123947,
+                "colourCode": null,
+                "colour": "MID GREEN",
+                "price": {
+                    "current": {
+                        "value": 104,
+                        "text": "$104.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "previous": {
+                        "value": 130,
+                        "text": "$130.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": null,
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "xrp": {
+                        "value": 65.86,
+                        "text": "$65.86",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "5742"
+                    },
+                    "currency": "USD",
+                    "isMarkedDown": true,
+                    "isOutletPrice": false,
+                    "startDateTime": "2022-07-11T01:00:00Z",
+                    "wasPriceStartDate": null
+                },
+                "isPrimary": true,
+                "isProp65Risk": true,
+                "ean": null,
+                "seller": null
+            },
+            {
+                "id": 201123964,
+                "name": "Reebok Kinetica II Edge sneakers in beige and black",
+                "sizeId": 434319,
+                "brandSize": "US 7.5",
+                "sizeDescription": "US7.5",
+                "displaySizeText": "US 7.5 - US7.5",
+                "sizeOrder": 90,
+                "sku": "109793620",
+                "isLowInStock": true,
+                "isInStock": true,
+                "isAvailable": true,
+                "colourWayId": 201123947,
+                "colourCode": null,
+                "colour": "MID GREEN",
+                "price": {
+                    "current": {
+                        "value": 104,
+                        "text": "$104.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "previous": {
+                        "value": 130,
+                        "text": "$130.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": null,
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "xrp": {
+                        "value": 65.86,
+                        "text": "$65.86",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "5742"
+                    },
+                    "currency": "USD",
+                    "isMarkedDown": true,
+                    "isOutletPrice": false,
+                    "startDateTime": "2022-07-11T01:00:00Z",
+                    "wasPriceStartDate": null
+                },
+                "isPrimary": true,
+                "isProp65Risk": true,
+                "ean": null,
+                "seller": null
+            },
+            {
+                "id": 201123965,
+                "name": "Reebok Kinetica II Edge sneakers in beige and black",
+                "sizeId": 434320,
+                "brandSize": "US 8",
+                "sizeDescription": "US8",
+                "displaySizeText": "US 8 - US8",
+                "sizeOrder": 100,
+                "sku": "109793621",
+                "isLowInStock": true,
+                "isInStock": true,
+                "isAvailable": true,
+                "colourWayId": 201123947,
+                "colourCode": null,
+                "colour": "MID GREEN",
+                "price": {
+                    "current": {
+                        "value": 104,
+                        "text": "$104.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "previous": {
+                        "value": 130,
+                        "text": "$130.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": null,
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "xrp": {
+                        "value": 65.86,
+                        "text": "$65.86",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "5742"
+                    },
+                    "currency": "USD",
+                    "isMarkedDown": true,
+                    "isOutletPrice": false,
+                    "startDateTime": "2022-07-11T01:00:00Z",
+                    "wasPriceStartDate": null
+                },
+                "isPrimary": true,
+                "isProp65Risk": true,
+                "ean": null,
+                "seller": null
+            },
+            {
+                "id": 201123971,
+                "name": "Reebok Kinetica II Edge sneakers in beige and black",
+                "sizeId": 434321,
+                "brandSize": "US 8.5",
+                "sizeDescription": "US8.5",
+                "displaySizeText": "US 8.5 - US8.5",
+                "sizeOrder": 110,
+                "sku": "109793622",
+                "isLowInStock": true,
+                "isInStock": true,
+                "isAvailable": true,
+                "colourWayId": 201123947,
+                "colourCode": null,
+                "colour": "MID GREEN",
+                "price": {
+                    "current": {
+                        "value": 104,
+                        "text": "$104.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "previous": {
+                        "value": 130,
+                        "text": "$130.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": null,
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "xrp": {
+                        "value": 65.86,
+                        "text": "$65.86",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "5742"
+                    },
+                    "currency": "USD",
+                    "isMarkedDown": true,
+                    "isOutletPrice": false,
+                    "startDateTime": "2022-07-11T01:00:00Z",
+                    "wasPriceStartDate": null
+                },
+                "isPrimary": true,
+                "isProp65Risk": true,
+                "ean": null,
+                "seller": null
+            },
+            {
+                "id": 201123960,
+                "name": "Reebok Kinetica II Edge sneakers in beige and black",
+                "sizeId": 434326,
+                "brandSize": "US 9",
+                "sizeDescription": "US9",
+                "displaySizeText": "US 9 - US9",
+                "sizeOrder": 120,
+                "sku": "109793623",
+                "isLowInStock": false,
+                "isInStock": true,
+                "isAvailable": true,
+                "colourWayId": 201123947,
+                "colourCode": null,
+                "colour": "MID GREEN",
+                "price": {
+                    "current": {
+                        "value": 104,
+                        "text": "$104.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "previous": {
+                        "value": 130,
+                        "text": "$130.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": null,
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "xrp": {
+                        "value": 65.86,
+                        "text": "$65.86",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "5742"
+                    },
+                    "currency": "USD",
+                    "isMarkedDown": true,
+                    "isOutletPrice": false,
+                    "startDateTime": "2022-07-11T01:00:00Z",
+                    "wasPriceStartDate": null
+                },
+                "isPrimary": true,
+                "isProp65Risk": true,
+                "ean": null,
+                "seller": null
+            },
+            {
+                "id": 201123967,
+                "name": "Reebok Kinetica II Edge sneakers in beige and black",
+                "sizeId": 434322,
+                "brandSize": "US 9.5",
+                "sizeDescription": "US9.5",
+                "displaySizeText": "US 9.5 - US9.5",
+                "sizeOrder": 130,
+                "sku": "109793624",
+                "isLowInStock": true,
+                "isInStock": true,
+                "isAvailable": true,
+                "colourWayId": 201123947,
+                "colourCode": null,
+                "colour": "MID GREEN",
+                "price": {
+                    "current": {
+                        "value": 104,
+                        "text": "$104.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "previous": {
+                        "value": 130,
+                        "text": "$130.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": null,
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "xrp": {
+                        "value": 65.86,
+                        "text": "$65.86",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "5742"
+                    },
+                    "currency": "USD",
+                    "isMarkedDown": true,
+                    "isOutletPrice": false,
+                    "startDateTime": "2022-07-11T01:00:00Z",
+                    "wasPriceStartDate": null
+                },
+                "isPrimary": true,
+                "isProp65Risk": true,
+                "ean": null,
+                "seller": null
+            },
+            {
+                "id": 201123970,
+                "name": "Reebok Kinetica II Edge sneakers in beige and black",
+                "sizeId": 434323,
+                "brandSize": "US 10",
+                "sizeDescription": "US10",
+                "displaySizeText": "US 10 - US10",
+                "sizeOrder": 140,
+                "sku": "109793625",
+                "isLowInStock": true,
+                "isInStock": true,
+                "isAvailable": true,
+                "colourWayId": 201123947,
+                "colourCode": null,
+                "colour": "MID GREEN",
+                "price": {
+                    "current": {
+                        "value": 104,
+                        "text": "$104.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "previous": {
+                        "value": 130,
+                        "text": "$130.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": null,
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "xrp": {
+                        "value": 65.86,
+                        "text": "$65.86",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "5742"
+                    },
+                    "currency": "USD",
+                    "isMarkedDown": true,
+                    "isOutletPrice": false,
+                    "startDateTime": "2022-07-11T01:00:00Z",
+                    "wasPriceStartDate": null
+                },
+                "isPrimary": true,
+                "isProp65Risk": true,
+                "ean": null,
+                "seller": null
+            },
+            {
+                "id": 201123962,
+                "name": "Reebok Kinetica II Edge sneakers in beige and black",
+                "sizeId": 434327,
+                "brandSize": "US 10.5",
+                "sizeDescription": "US10.5",
+                "displaySizeText": "US 10.5 - US10.5",
+                "sizeOrder": 150,
+                "sku": "109793626",
+                "isLowInStock": true,
+                "isInStock": true,
+                "isAvailable": true,
+                "colourWayId": 201123947,
+                "colourCode": null,
+                "colour": "MID GREEN",
+                "price": {
+                    "current": {
+                        "value": 104,
+                        "text": "$104.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "previous": {
+                        "value": 130,
+                        "text": "$130.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": null,
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "xrp": {
+                        "value": 65.86,
+                        "text": "$65.86",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "5742"
+                    },
+                    "currency": "USD",
+                    "isMarkedDown": true,
+                    "isOutletPrice": false,
+                    "startDateTime": "2022-07-11T01:00:00Z",
+                    "wasPriceStartDate": null
+                },
+                "isPrimary": true,
+                "isProp65Risk": true,
+                "ean": null,
+                "seller": null
+            },
+            {
+                "id": 201123968,
+                "name": "Reebok Kinetica II Edge sneakers in beige and black",
+                "sizeId": 434328,
+                "brandSize": "US 11",
+                "sizeDescription": "US11",
+                "displaySizeText": "US 11 - US11",
+                "sizeOrder": 160,
+                "sku": "109793627",
+                "isLowInStock": true,
+                "isInStock": true,
+                "isAvailable": true,
+                "colourWayId": 201123947,
+                "colourCode": null,
+                "colour": "MID GREEN",
+                "price": {
+                    "current": {
+                        "value": 104,
+                        "text": "$104.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "previous": {
+                        "value": 130,
+                        "text": "$130.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": null,
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "xrp": {
+                        "value": 65.86,
+                        "text": "$65.86",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "5742"
+                    },
+                    "currency": "USD",
+                    "isMarkedDown": true,
+                    "isOutletPrice": false,
+                    "startDateTime": "2022-07-11T01:00:00Z",
+                    "wasPriceStartDate": null
+                },
+                "isPrimary": true,
+                "isProp65Risk": true,
+                "ean": null,
+                "seller": null
+            },
+            {
+                "id": 201123958,
+                "name": "Reebok Kinetica II Edge sneakers in beige and black",
+                "sizeId": 434329,
+                "brandSize": "US 12",
+                "sizeDescription": "US12",
+                "displaySizeText": "US 12 - US12",
+                "sizeOrder": 180,
+                "sku": "109793628",
+                "isLowInStock": true,
+                "isInStock": true,
+                "isAvailable": true,
+                "colourWayId": 201123947,
+                "colourCode": null,
+                "colour": "MID GREEN",
+                "price": {
+                    "current": {
+                        "value": 104,
+                        "text": "$104.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "previous": {
+                        "value": 130,
+                        "text": "$130.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": null,
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "xrp": {
+                        "value": 65.86,
+                        "text": "$65.86",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "5742"
+                    },
+                    "currency": "USD",
+                    "isMarkedDown": true,
+                    "isOutletPrice": false,
+                    "startDateTime": "2022-07-11T01:00:00Z",
+                    "wasPriceStartDate": null
+                },
+                "isPrimary": true,
+                "isProp65Risk": true,
+                "ean": null,
+                "seller": null
+            },
+            {
+                "id": 201123966,
+                "name": "Reebok Kinetica II Edge sneakers in beige and black",
+                "sizeId": 434325,
+                "brandSize": "US 13",
+                "sizeDescription": "US13",
+                "displaySizeText": "US 13 - US13",
+                "sizeOrder": 200,
+                "sku": "109793629",
+                "isLowInStock": true,
+                "isInStock": true,
+                "isAvailable": true,
+                "colourWayId": 201123947,
+                "colourCode": null,
+                "colour": "MID GREEN",
+                "price": {
+                    "current": {
+                        "value": 104,
+                        "text": "$104.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "previous": {
+                        "value": 130,
+                        "text": "$130.00",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": null,
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "0"
+                    },
+                    "xrp": {
+                        "value": 65.86,
+                        "text": "$65.86",
+                        "versionId": "PRMP000002000900000005296952620220711020000",
+                        "conversionId": "5742"
+                    },
+                    "currency": "USD",
+                    "isMarkedDown": true,
+                    "isOutletPrice": false,
+                    "startDateTime": "2022-07-11T01:00:00Z",
+                    "wasPriceStartDate": null
+                },
+                "isPrimary": true,
+                "isProp65Risk": true,
+                "ean": null,
+                "seller": null
+            }
+        ],
+        "media": {
+            "images": [
+                {
+                    "url": "images.asos-media.com/products/reebok-kinetica-ii-edge-sneakers-in-beige-and-black/201123944-1-midgreen",
+                    "type": "Standard1",
+                    "colourWayId": 201123947,
+                    "colourCode": "",
+                    "colour": "MID GREEN",
+                    "isPrimary": true
+                },
+                {
+                    "url": "images.asos-media.com/products/reebok-kinetica-ii-edge-sneakers-in-beige-and-black/201123944-2",
+                    "type": "Standard2",
+                    "colourWayId": null,
+                    "colourCode": "",
+                    "colour": "",
+                    "isPrimary": false
+                },
+                {
+                    "url": "images.asos-media.com/products/reebok-kinetica-ii-edge-sneakers-in-beige-and-black/201123944-3",
+                    "type": "Standard3",
+                    "colourWayId": null,
+                    "colourCode": "",
+                    "colour": "",
+                    "isPrimary": false
+                },
+                {
+                    "url": "images.asos-media.com/products/reebok-kinetica-ii-edge-sneakers-in-beige-and-black/201123944-4",
+                    "type": "Standard4",
+                    "colourWayId": null,
+                    "colourCode": "",
+                    "colour": "",
+                    "isPrimary": false
+                }
+            ],
+            "catwalk": [],
+            "spinset": [],
+            "swatchSprite": []
+        },
+        "badges": [],
+        "info": {
+            "aboutMe": "Textile and faux-leather upper<br><br>Main: 100% Textile.",
+            "sizeAndFit": null,
+            "careInfo": "Machine wash according to instructions on care labels"
+        },
+        "shippingRestriction": null,
+        "price": {
+            "current": {
+                "value": 104,
+                "text": "$104.00",
+                "versionId": "PRMP000002000900000005296952620220711020000",
+                "conversionId": "0"
+            },
+            "previous": {
+                "value": 130,
+                "text": "$130.00",
+                "versionId": "PRMP000002000900000005296952620220711020000",
+                "conversionId": "0"
+            },
+            "rrp": {
+                "value": null,
+                "text": null,
+                "versionId": "PRMP000002000900000005296952620220711020000",
+                "conversionId": "0"
+            },
+            "xrp": {
+                "value": 65.86,
+                "text": "$65.86",
+                "versionId": "PRMP000002000900000005296952620220711020000",
+                "conversionId": "5742"
+            },
+            "currency": "USD",
+            "isMarkedDown": true,
+            "isOutletPrice": false,
+            "startDateTime": "2022-07-11T01:00:00Z",
+            "wasPriceStartDate": null
+        },
+        "isDeadProduct": false,
+        "rating": null,
+        "productType": {
+            "id": 8606,
+            "name": "Trainers"
+        },
+        "plpIds": [
+            {
+                "id": 1935,
+                "type": "Standard"
+            },
+            {
+                "id": 4209,
+                "type": "SEO"
+            },
+            {
+                "id": 5775,
+                "type": "Standard"
+            },
+            {
+                "id": 8409,
+                "type": "Standard"
+            },
+            {
+                "id": 16673,
+                "type": "Standard"
+            },
+            {
+                "id": 17184,
+                "type": "Standard"
+            },
+            {
+                "id": 24144,
+                "type": "Brand"
+            },
+            {
+                "id": 26089,
+                "type": "Standard"
+            },
+            {
+                "id": 26090,
+                "type": "Standard"
+            },
+            {
+                "id": 26954,
+                "type": "Standard"
+            },
+            {
+                "id": 27179,
+                "type": "Standard"
+            },
+            {
+                "id": 27183,
+                "type": "Standard"
+            },
+            {
+                "id": 28031,
+                "type": "Standard"
+            },
+            {
+                "id": 28044,
+                "type": "Standard"
+            },
+            {
+                "id": 28045,
+                "type": "Standard"
+            },
+            {
+                "id": 28235,
+                "type": "Standard"
+            },
+            {
+                "id": 28236,
+                "type": "Standard"
+            },
+            {
+                "id": 28237,
+                "type": "Standard"
+            },
+            {
+                "id": 28239,
+                "type": "Standard"
+            },
+            {
+                "id": 28362,
+                "type": "Standard"
+            },
+            {
+                "id": 28528,
+                "type": "Standard"
+            },
+            {
+                "id": 50537,
+                "type": "Standard"
+            }
+        ],
+        "baseUrl": "https://www.asos.com"
+    },
+    "status": 200,
+    "statusText": "OK",
+    "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "ver",
+        "access-control-allow-methods": "GET, POST",
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-encoding": "gzip",
+        "content-type": "application/json",
+        "date": "Mon, 11 Jul 2022 06:20:55 GMT",
+        "server": "RapidAPI-1.2.8",
+        "transfer-encoding": "chunked",
+        "vary": "Accept-Encoding",
+        "x-rapidapi-region": "AWS - ap-southeast-1",
+        "x-rapidapi-version": "1.2.8",
+        "x-ratelimit-requests-limit": "500",
+        "x-ratelimit-requests-remaining": "371",
+        "x-ratelimit-requests-reset": "2412722"
+    },
+    "config": {
+        "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+        },
+        "transformRequest": [
+            null
+        ],
+        "transformResponse": [
+            null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "env": {
+            "FormData": null
+        },
+        "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "X-RapidAPI-Key": "e4c5f39d2fmsh5f2f0f4f86dd7f2p1b75d8jsn798b4cc08ecf",
+            "X-RapidAPI-Host": "asos2.p.rapidapi.com"
+        },
+        "method": "get",
+        "url": "https://asos2.p.rapidapi.com/products/v3/detail",
+        "params": {
+            "id": "201123944",
+            "lang": "en-US",
+            "store": "US",
+            "sizeSchema": "US",
+            "currency": "USD"
+        }
+    },
+    "request": {}
+}

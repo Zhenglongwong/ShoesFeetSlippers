@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Signup from "../components/Signup";
+import Signup from "../pages/Signup";
 import {BrowserRouter as Router} from 'react-router-dom'
 import {getByRoleName} from "./utilities"
 

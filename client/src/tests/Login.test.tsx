@@ -1,28 +1,29 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Login from "../components/Login";
+import Login from "../pages/Login";
 import { getByRoleName } from "./utilities";
-import { faker } from "@faker-js/faker";
+import {faker} from "@faker-js/faker";
+import {BrowserRouter as Router} from "react-router-dom"
 
 describe("Login", () => {
 	describe("user interface should have", () => {
 		test("email field", () => {
-			render(<Login />);
+			render(<Router><Login /></Router>);
 			expect(getByRoleName("textbox", "Email")).toBeInTheDocument();
 		});
 		test("password field", () => {
-			render(<Login />);
+			render(<Router><Login /></Router>);
 			expect(screen.getByLabelText("Password")).toBeInTheDocument();
 		});
 		test("login button", () => {
-			render(<Login />);
+			render(<Router><Login /></Router>);
 			expect(getByRoleName("button", "Login")).toBeInTheDocument();
 		});
 	});
 	describe("email field should show error message if", () => {
 		test("clicked and empty", async () => {
 			const user = userEvent.setup();
-			render(<Login />);
+			render(<Router><Login /></Router>);
 
 			await user.click(getByRoleName("textbox", "Email"));
 			await user.click(screen.getByLabelText("Password"));
@@ -32,7 +33,7 @@ describe("Login", () => {
 		});
 		test("clicked and not a valid email", async () => {
 			const user = userEvent.setup();
-			render(<Login />);
+			render(<Router><Login /></Router>);
 
 			await user.click(getByRoleName("textbox", "Email"));
 			await user.keyboard("asdfasdf");
@@ -45,7 +46,7 @@ describe("Login", () => {
 	describe("password field should show an error if", () => {
 		test("clicked and empty", async () => {
 			const user = userEvent.setup();
-			render(<Login />);
+			render(<Router><Login /></Router>);
 
 			await user.click(screen.getByLabelText("Password"));
 			await user.click(getByRoleName("textbox", "Email"));
@@ -58,7 +59,7 @@ describe("Login", () => {
 	describe("login button should be disabled if", () => {
 		test("disabled if email field is empty", async () => {
 			const user = userEvent.setup();
-			render(<Login />);
+			render(<Router><Login /></Router>);
 
 			await user.click(screen.getByLabelText("Password"));
 			await user.keyboard("asdfasdf");
@@ -67,7 +68,7 @@ describe("Login", () => {
         });
         test("disabled if email field is wrong", async () => {
 			const user = userEvent.setup();
-			render(<Login />);
+			render(<Router><Login /></Router>);
 
 			await user.click(getByRoleName("textbox", "Email"));
 			await user.keyboard(faker.word.noun());
@@ -76,7 +77,7 @@ describe("Login", () => {
 		});
 		test("disabled if password field is empty", async () => {
 			const user = userEvent.setup();
-			render(<Login />);
+			render(<Router><Login /></Router>);
 
 			await user.click(getByRoleName("textbox", "Email"));
 			await user.keyboard(faker.internet.email());

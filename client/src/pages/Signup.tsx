@@ -4,7 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 
-interface values {
+interface iValues {
 	email: string;
 	password: string;
 	passwordCheck: string;
@@ -31,8 +31,8 @@ const Signup = () => {
 	});
 
 	const [resStatus, setResStatus] = useState(0);
-	const handleSubmit = async (values: values): Promise<void> => {
-		const { data } = await axios.post("/api/users", values);
+	const handleSubmit = async (values: iValues): Promise<void> => {
+		const { data } = await axios.post("/api/signup", values);
 		setResStatus(data.data.status);
 	};
 

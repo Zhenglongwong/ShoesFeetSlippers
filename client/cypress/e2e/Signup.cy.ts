@@ -11,7 +11,7 @@ describe("Signup", () => {
 
 	describe("on submit", () => {
 		it("should post correct form values", () => {
-			cy.intercept("POST", "/api/users", { fixture: "failure.json" }).as("postSignup");
+			cy.intercept("POST", "/api/signup", { fixture: "failure.json" }).as("postSignup");
 			const EMAIL = faker.internet.email();
 			const NAME = faker.word.noun();
 			const PASSWORD = faker.word.noun(8);
@@ -28,7 +28,7 @@ describe("Signup", () => {
 
 	describe("on receiving response", () => {
 		it("should show success message if signup is successful", () => {
-			cy.intercept("POST", "/api/users", { fixture: "success.json" });
+			cy.intercept("POST", "/api/signup", { fixture: "success.json" });
 			cy.visit("http://localhost:3000/signup");
 			cy.findAllByText("Signup successful!").should("not.exist");
 			signup(faker.internet.email(), faker.word.noun(), faker.word.noun(8));
@@ -36,7 +36,7 @@ describe("Signup", () => {
 		});
 
 		it("should show failure message if signup is unsuccessful", () => {
-			cy.intercept("POST", "/api/users", { fixture: "failure.json" });
+			cy.intercept("POST", "/api/signup", { fixture: "failure.json" });
 			cy.visit("http://localhost:3000/signup");
 			cy.findAllByText("Signup failed!").should("not.exist");
 			signup(faker.internet.email(), faker.word.noun(), faker.word.noun(8));
@@ -44,10 +44,11 @@ describe("Signup", () => {
 		});
 
 		it("should redirect to login if successful", () => {
-			cy.intercept("POST", "/api/users", { fixture: "success.json" });
+			cy.intercept("POST", "/api/signup", { fixture: "success.json" });
 			cy.visit("http://localhost:3000/signup");
 			signup(faker.internet.email(), faker.word.noun(), faker.word.noun(8));
 			cy.url().should("be.equal", "http://localhost:3000/login");
 		});
+		it.skip("should show error message if promise is rejected")
 	});
 });

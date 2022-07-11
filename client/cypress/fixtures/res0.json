@@ -1,0 +1,2099 @@
+{
+    "data": {
+        "searchTerm": "",
+        "categoryName": "Shoes, Boots & Sneakers",
+        "itemCount": 80,
+        "redirectUrl": "",
+        "products": [
+            {
+                "id": 200726394,
+                "name": "Nike Running Trail Pegasus 3 GORE-TEX sneakers in rattan/campfire orange",
+                "price": {
+                    "current": {
+                        "value": 160,
+                        "text": "$160.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "CREAM",
+                "colourWayId": 200726402,
+                "brandName": "Nike Running",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 105445833,
+                "productType": "Product",
+                "url": "nike-running/nike-running-trail-pegasus-3-gore-tex-sneakers-in-rattan-campfire-orange/prd/200726394?clr=cream&colourWayId=200726402",
+                "imageUrl": "images.asos-media.com/products/nike-running-trail-pegasus-3-gore-tex-sneakers-in-rattan-campfire-orange/200726394-1-cream",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 201123944,
+                "name": "Reebok Kinetica II Edge sneakers in beige and black",
+                "price": {
+                    "current": {
+                        "value": 130,
+                        "text": "$130.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "MID GREEN",
+                "colourWayId": 201123947,
+                "brandName": "Reebok",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 109778847,
+                "productType": "Product",
+                "url": "reebok/reebok-kinetica-ii-edge-sneakers-in-beige-and-black/prd/201123944?clr=mid-green&colourWayId=201123947",
+                "imageUrl": "images.asos-media.com/products/reebok-kinetica-ii-edge-sneakers-in-beige-and-black/201123944-1-midgreen",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 201157216,
+                "name": "Nike Air Max 2021 sneakers in summit white/black",
+                "price": {
+                    "current": {
+                        "value": 160,
+                        "text": "$160.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "White",
+                "colourWayId": 201157221,
+                "brandName": "Nike",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 109503427,
+                "productType": "Product",
+                "url": "nike/nike-air-max-2021-sneakers-in-summit-white-black/prd/201157216?clr=white&colourWayId=201157221",
+                "imageUrl": "images.asos-media.com/products/nike-air-max-2021-sneakers-in-summit-white-black/201157216-1-white",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 201311682,
+                "name": "Vans SK8-Hi Sherpa sneakers in camo",
+                "price": {
+                    "current": {
+                        "value": 80,
+                        "text": "$80.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "Camo",
+                "colourWayId": 201311683,
+                "brandName": "Vans",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 111638456,
+                "productType": "Product",
+                "url": "vans/vans-sk8-hi-sherpa-sneakers-in-camo/prd/201311682?clr=camo&colourWayId=201311683",
+                "imageUrl": "images.asos-media.com/products/vans-sk8-hi-sherpa-sneakers-in-camo/201311682-1-camo",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 201368779,
+                "name": "ASOS DESIGN sliders in black",
+                "price": {
+                    "current": {
+                        "value": 15,
+                        "text": "$15.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "Black",
+                "colourWayId": 201368787,
+                "brandName": "ASOS DESIGN",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 112838696,
+                "productType": "Product",
+                "url": "asos-design/asos-design-sliders-in-black/prd/201368779?clr=black&colourWayId=201368787",
+                "imageUrl": "images.asos-media.com/products/asos-design-sliders-in-black/201368779-1-black",
+                "videoUrl": null,
+                "isSellingFast": true,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 201417983,
+                "name": "ASOS DESIGN double strap monk shoe in gray suede",
+                "price": {
+                    "current": {
+                        "value": 70,
+                        "text": "$70.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "Gray",
+                "colourWayId": 201417984,
+                "brandName": "ASOS DESIGN",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 113184826,
+                "productType": "Product",
+                "url": "asos-design/asos-design-double-strap-monk-shoe-in-gray-suede/prd/201417983?clr=gray&colourWayId=201417984",
+                "imageUrl": "images.asos-media.com/products/asos-design-double-strap-monk-shoe-in-gray-suede/201417983-1-grey",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 201481153,
+                "name": "Reebok Classic Legacy AZ sneakers in black and chalk",
+                "price": {
+                    "current": {
+                        "value": 80,
+                        "text": "$80.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "Black",
+                "colourWayId": 201481154,
+                "brandName": "Reebok",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 113483301,
+                "productType": "Product",
+                "url": "reebok/reebok-classic-legacy-az-sneakers-in-black-and-chalk/prd/201481153?clr=black&colourWayId=201481154",
+                "imageUrl": "images.asos-media.com/products/reebok-classic-legacy-az-sneakers-in-black-and-chalk/201481153-1-black",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 201612787,
+                "name": "ASOS DESIGN tech sandals in black and neon green on chunky sole",
+                "price": {
+                    "current": {
+                        "value": 58,
+                        "text": "$58.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "Multi",
+                "colourWayId": 201612788,
+                "brandName": "ASOS DESIGN",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 114120897,
+                "productType": "Product",
+                "url": "asos-design/asos-design-tech-sandals-in-black-and-neon-green-on-chunky-sole/prd/201612787?clr=multi&colourWayId=201612788",
+                "imageUrl": "images.asos-media.com/products/asos-design-tech-sandals-in-black-and-neon-green-on-chunky-sole/201612787-1-multi",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 201612866,
+                "name": "ASOS DESIGN sliders in pink with gold badge",
+                "price": {
+                    "current": {
+                        "value": 22,
+                        "text": "$22.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "PINK",
+                "colourWayId": 201612867,
+                "brandName": "ASOS DESIGN",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 114120902,
+                "productType": "Product",
+                "url": "asos-design/asos-design-sliders-in-pink-with-gold-badge/prd/201612866?clr=pink&colourWayId=201612867",
+                "imageUrl": "images.asos-media.com/products/asos-design-sliders-in-pink-with-gold-badge/201612866-1-pink",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 201612875,
+                "name": "ASOS DESIGN fisherman sandals in dark brown",
+                "price": {
+                    "current": {
+                        "value": 30,
+                        "text": "$30.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "BROWN",
+                "colourWayId": 201612876,
+                "brandName": "ASOS DESIGN",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 114120903,
+                "productType": "Product",
+                "url": "asos-design/asos-design-fisherman-sandals-in-dark-brown/prd/201612875?clr=brown&colourWayId=201612876",
+                "imageUrl": "images.asos-media.com/products/asos-design-fisherman-sandals-in-dark-brown/201612875-1-brown",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 201960150,
+                "name": "ASOS DESIGN chunky gladiator sandals in black leather",
+                "price": {
+                    "current": {
+                        "value": 52,
+                        "text": "$52.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "Black",
+                "colourWayId": 201960152,
+                "brandName": "ASOS DESIGN",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 115208822,
+                "productType": "Product",
+                "url": "asos-design/asos-design-chunky-gladiator-sandals-in-black-leather/prd/201960150?clr=black&colourWayId=201960152",
+                "imageUrl": "images.asos-media.com/products/asos-design-chunky-gladiator-sandals-in-black-leather/201960150-1-black",
+                "videoUrl": null,
+                "isSellingFast": true,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 202004114,
+                "name": "ASOS DESIGN wellington boot with scuba detail in red",
+                "price": {
+                    "current": {
+                        "value": 37,
+                        "text": "$37.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "RED",
+                "colourWayId": 202004115,
+                "brandName": "ASOS DESIGN",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 115384181,
+                "productType": "Product",
+                "url": "asos-design/asos-design-wellington-boot-with-scuba-detail-in-red/prd/202004114?clr=red&colourWayId=202004115",
+                "imageUrl": "images.asos-media.com/products/asos-design-wellington-boot-with-scuba-detail-in-red/202004114-1-red",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 202004121,
+                "name": "ASOS DESIGN wellington in khaki",
+                "price": {
+                    "current": {
+                        "value": 42,
+                        "text": "$42.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "Khaki",
+                "colourWayId": 202004122,
+                "brandName": "ASOS DESIGN",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 115384182,
+                "productType": "Product",
+                "url": "asos-design/asos-design-wellington-in-khaki/prd/202004121?clr=khaki&colourWayId=202004122",
+                "imageUrl": "images.asos-media.com/products/asos-design-wellington-in-khaki/202004121-1-khaki",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 202077295,
+                "name": "Reebok Classic Leather sneakers in white and gray",
+                "price": {
+                    "current": {
+                        "value": 75,
+                        "text": "$75.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "Ftwr white",
+                "colourWayId": 202077301,
+                "brandName": "Reebok",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 115598802,
+                "productType": "Product",
+                "url": "reebok/reebok-classic-leather-sneakers-in-white-and-gray/prd/202077295?clr=ftwr-white&colourWayId=202077301",
+                "imageUrl": "images.asos-media.com/products/reebok-classic-leather-sneakers-in-white-and-gray/202077295-1-ftwrwhite",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 202077640,
+                "name": "Reebok CL Legacy Vintage sneakers in gray and burgundy",
+                "price": {
+                    "current": {
+                        "value": 80,
+                        "text": "$80.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "Cold Gray",
+                "colourWayId": 202077641,
+                "brandName": "Reebok",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 115598801,
+                "productType": "Product",
+                "url": "reebok/reebok-cl-legacy-vintage-sneakers-in-gray-and-burgundy/prd/202077640?clr=cold-gray&colourWayId=202077641",
+                "imageUrl": "images.asos-media.com/products/reebok-cl-legacy-vintage-sneakers-in-gray-and-burgundy/202077640-1-coldgrey",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 202330216,
+                "name": "New Balance 574 sneakers in white navy and red",
+                "price": {
+                    "current": {
+                        "value": 89.99,
+                        "text": "$89.99"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "White/navy",
+                "colourWayId": 202330220,
+                "brandName": "New Balance",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 116393817,
+                "productType": "Product",
+                "url": "new-balance/new-balance-574-sneakers-in-white-navy-and-red/prd/202330216?clr=white-navy&colourWayId=202330220",
+                "imageUrl": "images.asos-media.com/products/new-balance-574-sneakers-in-white-navy-and-red/202330216-1-whitenavy",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 202385318,
+                "name": "Nike Air Force 1 '07 sneakers in white/medium blue",
+                "price": {
+                    "current": {
+                        "value": 100,
+                        "text": "$100.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "White/Blue",
+                "colourWayId": 202385324,
+                "brandName": "Nike",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 116550764,
+                "productType": "Product",
+                "url": "nike/nike-air-force-1-07-sneakers-in-white-medium-blue/prd/202385318?clr=white-blue&colourWayId=202385324",
+                "imageUrl": "images.asos-media.com/products/nike-air-force-1-07-sneakers-in-white-medium-blue/202385318-1-whiteblue",
+                "videoUrl": null,
+                "isSellingFast": true,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 202554254,
+                "name": "Vans Classic Slip-On plimsolls in white",
+                "price": {
+                    "current": {
+                        "value": 55,
+                        "text": "$55.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "White",
+                "colourWayId": 202554255,
+                "brandName": "Vans",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 117478690,
+                "productType": "Product",
+                "url": "vans/vans-classic-slip-on-plimsolls-in-white/prd/202554254?clr=white&colourWayId=202554255",
+                "imageUrl": "images.asos-media.com/products/vans-classic-slip-on-plimsolls-in-white/202554254-1-white",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 203023524,
+                "name": "Nike Trail Pegasus 3 GORE-TEX sneakers in rugged orange",
+                "price": {
+                    "current": {
+                        "value": 160,
+                        "text": "$160.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "Orange",
+                "colourWayId": 203023525,
+                "brandName": "Nike Running",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 111043481,
+                "productType": "Product",
+                "url": "nike-running/nike-trail-pegasus-3-gore-tex-sneakers-in-rugged-orange/prd/203023524?clr=orange&colourWayId=203023525",
+                "imageUrl": "images.asos-media.com/products/nike-trail-pegasus-3-gore-tex-sneakers-in-rugged-orange/203023524-1-orange",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            },
+            {
+                "id": 203051648,
+                "name": "Converse Chuck 70 Hi in midnight blue",
+                "price": {
+                    "current": {
+                        "value": 85,
+                        "text": "$85.00"
+                    },
+                    "previous": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "rrp": {
+                        "value": null,
+                        "text": ""
+                    },
+                    "isMarkedDown": false,
+                    "isOutletPrice": false,
+                    "currency": "USD"
+                },
+                "colour": "Navy",
+                "colourWayId": 203051649,
+                "brandName": "Converse",
+                "hasVariantColours": false,
+                "hasMultiplePrices": false,
+                "groupId": null,
+                "productCode": 119487310,
+                "productType": "Product",
+                "url": "converse/converse-chuck-70-hi-in-midnight-blue/prd/203051648?clr=navy&colourWayId=203051649",
+                "imageUrl": "images.asos-media.com/products/converse-chuck-70-hi-in-midnight-blue/203051648-1-navy",
+                "videoUrl": null,
+                "isSellingFast": false,
+                "sponsoredCampaignId": null
+            }
+        ],
+        "facets": [
+            {
+                "id": "freshness_band",
+                "name": "New in date",
+                "facetValues": [
+                    {
+                        "count": 20,
+                        "id": "2",
+                        "name": "Yesterday",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 78,
+                        "id": "3",
+                        "name": "Last 7 Days",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 108,
+                        "id": "4",
+                        "name": "Last 14 Days",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 175,
+                        "id": "5",
+                        "name": "Last 28 Days",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1274,
+                        "id": "6",
+                        "name": "Older Than 28 Days",
+                        "isSelected": false
+                    }
+                ],
+                "displayStyle": "Single-Column",
+                "facetType": "TextMultiSelect",
+                "hasSelectedValues": false
+            },
+            {
+                "id": "size",
+                "name": "Size",
+                "facetValues": [
+                    {
+                        "count": 28,
+                        "id": "6976",
+                        "name": "US 3.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 29,
+                        "id": "98",
+                        "name": "US 4",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 38,
+                        "id": "6373",
+                        "name": "US 4.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 147,
+                        "id": "3208",
+                        "name": "US 5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 130,
+                        "id": "6385",
+                        "name": "US 5.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 303,
+                        "id": "14",
+                        "name": "US 6",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 200,
+                        "id": "5933",
+                        "name": "US 6.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 722,
+                        "id": "3222",
+                        "name": "US 7",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 221,
+                        "id": "5945",
+                        "name": "US 7.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 849,
+                        "id": "26",
+                        "name": "US 8",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 292,
+                        "id": "5312",
+                        "name": "US 8.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 821,
+                        "id": "3236",
+                        "name": "US 9",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 260,
+                        "id": "5324",
+                        "name": "US 9.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 257,
+                        "id": "5336",
+                        "name": "US 10.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 837,
+                        "id": "38",
+                        "name": "US 10",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 811,
+                        "id": "3242",
+                        "name": "US 11",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 297,
+                        "id": "5285",
+                        "name": "US 11.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 687,
+                        "id": "50",
+                        "name": "US 12",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 87,
+                        "id": "6728",
+                        "name": "US 12.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 579,
+                        "id": "3186",
+                        "name": "US 13",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 25,
+                        "id": "7531",
+                        "name": "US 13.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 167,
+                        "id": "62",
+                        "name": "US 14",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 2,
+                        "id": "11509",
+                        "name": "US 14.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 23,
+                        "id": "5263",
+                        "name": "US 15",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "1",
+                        "name": "One Size",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 6,
+                        "id": "4421",
+                        "name": "S",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 7,
+                        "id": "4409",
+                        "name": "M",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "5155",
+                        "name": "L",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "5167",
+                        "name": "XL",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 75,
+                        "id": "10990",
+                        "name": "UK 12",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 14,
+                        "id": "15850",
+                        "name": "UK 14",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 94,
+                        "id": "10987",
+                        "name": "UK 6",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 37,
+                        "id": "3256",
+                        "name": "UK 5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 37,
+                        "id": "41583",
+                        "name": "UK 6 Wide Fit",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "6398",
+                        "name": "UK 6.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 101,
+                        "id": "14401",
+                        "name": "UK 7",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 39,
+                        "id": "41952",
+                        "name": "UK 7 Wide Fit",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 20,
+                        "id": "5340",
+                        "name": "UK 7.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 39,
+                        "id": "42192",
+                        "name": "UK 8 Wide Fit",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 17,
+                        "id": "5341",
+                        "name": "UK 8.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 108,
+                        "id": "14403",
+                        "name": "UK 9",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 38,
+                        "id": "42457",
+                        "name": "UK 9 Wide Fit",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 18,
+                        "id": "5342",
+                        "name": "UK 9.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 30,
+                        "id": "38802",
+                        "name": "UK 10 Wide Fit",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 18,
+                        "id": "5338",
+                        "name": "UK 10.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 89,
+                        "id": "14397",
+                        "name": "UK 11",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 25,
+                        "id": "38991",
+                        "name": "UK 11 Wide Fit",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 20,
+                        "id": "39218",
+                        "name": "UK 12 Wide Fit",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 24,
+                        "id": "5339",
+                        "name": "UK 13",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 10,
+                        "id": "39408",
+                        "name": "UK 13 Wide Fit",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "6978",
+                        "name": "UK 11.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 93,
+                        "id": "10988",
+                        "name": "UK 8",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 93,
+                        "id": "10989",
+                        "name": "UK 10",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "14256",
+                        "name": "EU 44",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "14257",
+                        "name": "EU 46",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "6405",
+                        "name": "EU 46",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "14259",
+                        "name": "EU 40",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "14260",
+                        "name": "EU 42",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 22,
+                        "id": "6974",
+                        "name": "US 3",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 2,
+                        "id": "61241",
+                        "name": "US5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "17089",
+                        "name": "US6",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "64957",
+                        "name": "US7",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "319",
+                        "name": "US8",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "64951",
+                        "name": "US9",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "64930",
+                        "name": "US10",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "64945",
+                        "name": "US11",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 2,
+                        "id": "329",
+                        "name": "US12",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "38852",
+                        "name": "UK 10.5-11",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 2,
+                        "id": "41304",
+                        "name": "UK 5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 2,
+                        "id": "49243",
+                        "name": "EU 46-47",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "56998",
+                        "name": "Mens 10",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "57036",
+                        "name": "Mens 10.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "57027",
+                        "name": "Mens 11",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "57004",
+                        "name": "Mens 11.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "57009",
+                        "name": "Mens 12",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "56964",
+                        "name": "Mens 13",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "57021",
+                        "name": "Mens 5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "56933",
+                        "name": "Mens 5.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "57042",
+                        "name": "Mens 6",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "56916",
+                        "name": "Mens 6.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "57037",
+                        "name": "Mens 7",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "57018",
+                        "name": "Mens 7.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "56985",
+                        "name": "Mens 8",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "56869",
+                        "name": "Mens 8.5",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "56946",
+                        "name": "Mens 9",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "56953",
+                        "name": "Mens 9.5",
+                        "isSelected": false
+                    }
+                ],
+                "displayStyle": "Single-Column",
+                "facetType": "TextMultiSelect",
+                "hasSelectedValues": false
+            },
+            {
+                "id": "attribute_1047",
+                "name": "Product Type",
+                "facetValues": [
+                    {
+                        "count": 159,
+                        "id": "8585",
+                        "name": "Boots",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 12,
+                        "id": "10775",
+                        "name": "Flip Flops",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 56,
+                        "id": "8600",
+                        "name": "Sandals",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "9799",
+                        "name": "Shoe Accessories",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 327,
+                        "id": "8609",
+                        "name": "Shoes",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 83,
+                        "id": "10774",
+                        "name": "Sliders",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 32,
+                        "id": "8597",
+                        "name": "Slippers",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 763,
+                        "id": "8606",
+                        "name": "Sneakers",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 16,
+                        "id": "8589",
+                        "name": "Wellies",
+                        "isSelected": false
+                    }
+                ],
+                "displayStyle": "Single-Column",
+                "facetType": "TextMultiSelect",
+                "hasSelectedValues": false
+            },
+            {
+                "id": "attribute_1046",
+                "name": "Style",
+                "facetValues": [
+                    {
+                        "count": 57,
+                        "id": "8222",
+                        "name": "Ankle",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 7,
+                        "id": "8651",
+                        "name": "Ankle Strap",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 15,
+                        "id": "10788",
+                        "name": "Boat Shoes",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 42,
+                        "id": "8620",
+                        "name": "Brogue",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 70,
+                        "id": "8629",
+                        "name": "Chelsea",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 8,
+                        "id": "8631",
+                        "name": "Chukka",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 111,
+                        "id": "8317",
+                        "name": "Chunky",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 29,
+                        "id": "8634",
+                        "name": "Derby",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 11,
+                        "id": "8615",
+                        "name": "Desert",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 25,
+                        "id": "8621",
+                        "name": "Espadrilles",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 267,
+                        "id": "8188",
+                        "name": "Flat",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 22,
+                        "id": "62002",
+                        "name": "Flatform",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 2,
+                        "id": "8627",
+                        "name": "Gladiator",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 27,
+                        "id": "8642",
+                        "name": "Heeled",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 2,
+                        "id": "10808",
+                        "name": "Hiking Boots",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 97,
+                        "id": "8630",
+                        "name": "Hi Top",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "72008",
+                        "name": "Jelly",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 32,
+                        "id": "72009",
+                        "name": "Lace-up",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 161,
+                        "id": "8633",
+                        "name": "Loafer",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 6,
+                        "id": "8327",
+                        "name": "Military",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 12,
+                        "id": "10800",
+                        "name": "Monk Strap",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 19,
+                        "id": "8648",
+                        "name": "Mule",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 94,
+                        "id": "61468",
+                        "name": "Other",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 14,
+                        "id": "8427",
+                        "name": "Oxford",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 14,
+                        "id": "62003",
+                        "name": "Platform",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "10794",
+                        "name": "Shoe Boots",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "8619",
+                        "name": "Sliders",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 2,
+                        "id": "8639",
+                        "name": "Slingback",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 49,
+                        "id": "8616",
+                        "name": "Sneaker",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "72015",
+                        "name": "Sock Boots",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 7,
+                        "id": "8210",
+                        "name": "Western",
+                        "isSelected": false
+                    }
+                ],
+                "displayStyle": "Single-Column",
+                "facetType": "TextMultiSelect",
+                "hasSelectedValues": false
+            },
+            {
+                "id": "attribute_10147",
+                "name": "Leather / Non Leather",
+                "facetValues": [
+                    {
+                        "count": 523,
+                        "id": "2244",
+                        "name": "Leather",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 889,
+                        "id": "2256",
+                        "name": "Non Leather",
+                        "isSelected": false
+                    }
+                ],
+                "displayStyle": "Single-Column",
+                "facetType": "TextMultiSelect",
+                "hasSelectedValues": false
+            },
+            {
+                "id": "base_colour",
+                "name": "Color",
+                "facetValues": [
+                    {
+                        "count": 539,
+                        "id": "4",
+                        "name": "Black",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 31,
+                        "id": "3",
+                        "name": "Blue",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 142,
+                        "id": "10",
+                        "name": "Brown",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "15",
+                        "name": "Clear",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 102,
+                        "id": "16",
+                        "name": "Gray",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 68,
+                        "id": "2",
+                        "name": "Green",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 30,
+                        "id": "17",
+                        "name": "Multi",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 42,
+                        "id": "33",
+                        "name": "Navy",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 85,
+                        "id": "37",
+                        "name": "Neutral",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 14,
+                        "id": "7",
+                        "name": "Orange",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 20,
+                        "id": "9",
+                        "name": "Pink",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 13,
+                        "id": "8",
+                        "name": "Purple",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 25,
+                        "id": "1",
+                        "name": "Red",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "12",
+                        "name": "Silver",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 310,
+                        "id": "5",
+                        "name": "White",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 24,
+                        "id": "6",
+                        "name": "Yellow",
+                        "isSelected": false
+                    }
+                ],
+                "displayStyle": "Single-Column",
+                "facetType": "TextMultiSelect",
+                "hasSelectedValues": false
+            },
+            {
+                "id": "brand",
+                "name": "Brand",
+                "facetValues": [
+                    {
+                        "count": 372,
+                        "id": "53",
+                        "name": "ASOS DESIGN",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 85,
+                        "id": "18",
+                        "name": "adidas Originals",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 9,
+                        "id": "16346",
+                        "name": "adidas performance",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 2,
+                        "id": "13688",
+                        "name": "Asics",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 12,
+                        "id": "16427",
+                        "name": "ASRA",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 29,
+                        "id": "15370",
+                        "name": "Bershka",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 14,
+                        "id": "14353",
+                        "name": "Buffalo",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 4,
+                        "id": "13839",
+                        "name": "Call it Spring",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "105",
+                        "name": "Calvin Klein",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "12507",
+                        "name": "Calvin Klein Jeans",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "3352",
+                        "name": "Clarks Originals",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "15878",
+                        "name": "Collusion",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 78,
+                        "id": "131",
+                        "name": "Converse",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 13,
+                        "id": "16205",
+                        "name": "Crocs",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 46,
+                        "id": "3180",
+                        "name": "Dr Martens",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 2,
+                        "id": "14722",
+                        "name": "EA7",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "3716",
+                        "name": "Frank Wright",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 13,
+                        "id": "2943",
+                        "name": "Fred Perry",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 2,
+                        "id": "274",
+                        "name": "Havaianas",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 5,
+                        "id": "262",
+                        "name": "H by Hudson",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 7,
+                        "id": "14644",
+                        "name": "Hollister",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 3,
+                        "id": "3179",
+                        "name": "Hunter",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 31,
+                        "id": "12461",
+                        "name": "Jack & Jones",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "16131",
+                        "name": "Karl Kani",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 18,
+                        "id": "391",
+                        "name": "Lacoste",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 58,
+                        "id": "499",
+                        "name": "New Balance",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 146,
+                        "id": "2986",
+                        "name": "Nike",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 33,
+                        "id": "15176",
+                        "name": "Nike Running",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 21,
+                        "id": "15177",
+                        "name": "Nike Training",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 12,
+                        "id": "14730",
+                        "name": "Noak",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 19,
+                        "id": "15010",
+                        "name": "Office",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 6,
+                        "id": "13872",
+                        "name": "PS Paul Smith",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 30,
+                        "id": "14823",
+                        "name": "Public Desire",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 25,
+                        "id": "14126",
+                        "name": "Pull&Bear",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 18,
+                        "id": "589",
+                        "name": "Puma",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 2,
+                        "id": "14100",
+                        "name": "Rains",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 28,
+                        "id": "2988",
+                        "name": "Reebok",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "16284",
+                        "name": "Reebok Classics",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 38,
+                        "id": "12983",
+                        "name": "River Island",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 30,
+                        "id": "16568",
+                        "name": "Schuh",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 7,
+                        "id": "14159",
+                        "name": "Selected Homme",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 2,
+                        "id": "14550",
+                        "name": "Teva",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "15807",
+                        "name": "The Couture Club",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 17,
+                        "id": "3312",
+                        "name": "The North Face",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 6,
+                        "id": "3672",
+                        "name": "Timberland",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 14,
+                        "id": "3029",
+                        "name": "Tommy Hilfiger",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 6,
+                        "id": "15631",
+                        "name": "Tommy Jeans",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "3659",
+                        "name": "Toms",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "16236",
+                        "name": "Topman",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 17,
+                        "id": "752",
+                        "name": "UGG",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "15203",
+                        "name": "Under Armour",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "16711",
+                        "name": "VAI21",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 102,
+                        "id": "765",
+                        "name": "Vans",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 51,
+                        "id": "14712",
+                        "name": "WALK LONDON",
+                        "isSelected": false
+                    }
+                ],
+                "displayStyle": "Single-Column",
+                "facetType": "TextMultiSelect",
+                "hasSelectedValues": false
+            },
+            {
+                "id": "attribute_10155",
+                "name": "Body Fit",
+                "facetValues": [
+                    {
+                        "count": 1435,
+                        "id": "6764",
+                        "name": "Main Collection",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 79,
+                        "id": "7504",
+                        "name": "Wide Fit",
+                        "isSelected": false
+                    }
+                ],
+                "displayStyle": "Single-Column",
+                "facetType": "TextMultiSelect",
+                "hasSelectedValues": false
+            },
+            {
+                "id": "currentprice",
+                "name": "Price Range",
+                "facetValues": [
+                    {
+                        "count": 2,
+                        "id": "8.0",
+                        "name": "8.0",
+                        "isSelected": false
+                    },
+                    {
+                        "count": 1,
+                        "id": "296.95",
+                        "name": "296.95",
+                        "isSelected": false
+                    }
+                ],
+                "displayStyle": "Price-Slider",
+                "facetType": "Range",
+                "hasSelectedValues": false
+            }
+        ],
+        "diagnostics": {
+            "requestId": "c5413b0d-6aab-4e8e-8f6c-4d9a8b432ca6",
+            "processingTime": 262,
+            "queryTime": 123,
+            "recommendationsEnabled": false,
+            "recommendationsAnalytics": {
+                "personalisationStatus": 5,
+                "numberOfItems": 0,
+                "numberOfRecs": 0,
+                "personalisationType": "",
+                "items": []
+            }
+        },
+        "searchPassMeta": {
+            "isPartial": false,
+            "isSpellcheck": false,
+            "searchPass": [],
+            "alternateSearchTerms": []
+        },
+        "queryId": null,
+        "discoverSearchProductTypes": [],
+        "campaigns": {
+            "promoBanners": [],
+            "imageTiles": [],
+            "sponsoredProducts": []
+        }
+    },
+    "status": 200,
+    "statusText": "OK",
+    "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "ver",
+        "access-control-allow-methods": "GET, POST",
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-type": "application/json",
+        "date": "Sun, 10 Jul 2022 14:12:19 GMT",
+        "server": "RapidAPI-1.2.8",
+        "transfer-encoding": "chunked",
+        "x-rapidapi-region": "AWS - ap-southeast-1",
+        "x-rapidapi-version": "1.2.8",
+        "x-ratelimit-requests-limit": "500",
+        "x-ratelimit-requests-remaining": "382",
+        "x-ratelimit-requests-reset": "2470838"
+    },
+    "config": {
+        "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+        },
+        "transformRequest": [
+            null
+        ],
+        "transformResponse": [
+            null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "env": {
+            "FormData": null
+        },
+        "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "X-RapidAPI-Key": "e4c5f39d2fmsh5f2f0f4f86dd7f2p1b75d8jsn798b4cc08ecf",
+            "X-RapidAPI-Host": "asos2.p.rapidapi.com"
+        },
+        "method": "get",
+        "url": "https://asos2.p.rapidapi.com/products/v2/list",
+        "params": {
+            "store": "US",
+            "offset": "0",
+            "categoryId": "4209",
+            "limit": "20",
+            "country": "US",
+            "sort": "freshness",
+            "currency": "USD",
+            "sizeSchema": "US",
+            "lang": "en-US"
+        }
+    },
+    "request": {}
+}
