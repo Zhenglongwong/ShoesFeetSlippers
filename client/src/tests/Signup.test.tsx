@@ -20,7 +20,7 @@ describe("Signup", () => {
 		});
 		test("password check field", () => {
 			render(<Router><Signup /></Router>);
-			expect(screen.getByLabelText("Password Check")).toBeInTheDocument();
+			expect(screen.getByLabelText("Enter password again")).toBeInTheDocument();
 		});
 		test("signup button", () => {
 			render(<Router><Signup /></Router>);
@@ -36,7 +36,7 @@ describe("Signup", () => {
 			await user.click(getByRoleName("textbox", "Email"));
 			await user.click(screen.getByLabelText("Password"));
 
-			const errorMsg = await screen.findByText("Email is required", {}, { timeout: 50 });
+			const errorMsg = await screen.findByText("*Email is required", {}, { timeout: 50 });
 			expect(errorMsg).toBeInTheDocument();
 		});
 		test("clicked and not a valid email string", async () => {
@@ -47,7 +47,7 @@ describe("Signup", () => {
 			await user.keyboard("howdy");
 			await user.click(screen.getByLabelText("Password"));
 
-			const errorMsg = await screen.findByText("Invalid email address", {}, { timeout: 50 });
+			const errorMsg = await screen.findByText("*Invalid email address", {}, { timeout: 50 });
 			expect(errorMsg).toBeInTheDocument();
 		});
     });
@@ -60,7 +60,7 @@ describe("Signup", () => {
 			await user.click(getByRoleName("textbox", "Name"));
 			await user.click(getByRoleName("textbox", "Email"));
 
-			const errorMsg = await screen.findByText("Name is required", {}, { timeout: 50 });
+			const errorMsg = await screen.findByText("*Name is required", {}, { timeout: 50 });
 			expect(errorMsg).toBeInTheDocument();
         });
         test.todo("clicked and entered string with spaces only")
@@ -74,7 +74,7 @@ describe("Signup", () => {
 			await user.click(screen.getByLabelText("Password"));
 			await user.click(getByRoleName("textbox", "Email"));
 
-			const errorMsg = await screen.findByText("Password is required", {}, { timeout: 50 });
+			const errorMsg = await screen.findByText("*Password is required", {}, { timeout: 50 });
 			expect(errorMsg).toBeInTheDocument();
 		});
 		test("clicked and less than 8 characters", async () => {
@@ -86,7 +86,7 @@ describe("Signup", () => {
 			await user.click(getByRoleName("textbox", "Email"));
 
 			const errorMsg = await screen.findByText(
-				"Password must be at least 8 characters",
+				"*Password must be at least 8 characters",
 				{},
 				{ timeout: 50 }
 			);
@@ -100,11 +100,11 @@ describe("Signup", () => {
 			const user = userEvent.setup();
 			render(<Router><Signup /></Router>);
 
-			await user.click(screen.getByLabelText("Password Check"));
+			await user.click(screen.getByLabelText("Enter password again"));
 			await user.click(getByRoleName("textbox", "Email"));
 
 			const errorMsg = await screen.findByText(
-				"Please enter your password again",
+				"*Please enter your password again",
 				{},
 				{ timeout: 50 }
 			);
@@ -116,11 +116,11 @@ describe("Signup", () => {
 
 			await user.click(screen.getByLabelText("Password"));
 			await user.keyboard("123456733");
-			await user.click(screen.getByLabelText("Password Check"));
+			await user.click(screen.getByLabelText("Enter password again"));
 			await user.keyboard("123456344");
 			await user.click(screen.getByLabelText("Password"));
 
-			const errorMsg = await screen.findByText("Passwords must match", {}, { timeout: 50 });
+			const errorMsg = await screen.findByText("*Passwords must match", {}, { timeout: 50 });
 			expect(errorMsg).toBeInTheDocument();
 		});
 	});
@@ -152,9 +152,10 @@ describe("Signup", () => {
 
 			await user.click(screen.getByLabelText("Password"));
 			await user.keyboard("123456733");
-			await user.click(screen.getByLabelText("Password Check"));
+			await user.click(screen.getByLabelText("Enter password again"));
 			await user.keyboard("123456344");
 			await user.click(screen.getByLabelText("Password"));
+			
 			expect(getByRoleName("button", "Signup")).toBeDisabled();
 		});
 	});

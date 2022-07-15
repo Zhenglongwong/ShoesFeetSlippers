@@ -1,15 +1,11 @@
 import { faker } from "@faker-js/faker";
+import {login} from "./utils/account.cy"
+
 
 describe("Login", () => {
-    const login = (email: string, password:string) => {
-		cy.findByRole("textbox", { name: "Email" }).type(email);
-		cy.findByLabelText("Password").type(password);
-		cy.findByRole("button", { name: "Login" }).click();
-	};
-
 	describe("on submit", () => {
 		it("should post correct form values", () => {
-			cy.intercept("POST", "/api/login", { fixture: "failure.json" }).as("postLogin");
+			cy.intercept("POST", "/api/users/login", { fixture: "login/success.json" }).as("postLogin");
             const EMAIL = faker.internet.email();
             const PASSWORD = faker.word.noun(8);
 			cy.visit("http://localhost:3000/login");
@@ -22,19 +18,27 @@ describe("Login", () => {
 	});
 
 	describe("on receiving response", () => {
-		it("should show failure message if signup is unsuccessful", () => {
-			cy.intercept("POST", "/api/login", { fixture: "failure.json" });
-			cy.visit("http://localhost:3000/login");
-			cy.findAllByText("Login failed!").should("not.exist");
-			login(faker.internet.email(), faker.word.noun(8));
-			cy.findAllByText("Login failed!").should("exist");
-		});
 		it("should redirect to login if successful", () => {
-			cy.intercept("POST", "/api/login", { fixture: "success.json" });
+			cy.intercept("POST", "/api/users/login", {fixture: "login/success.json"});
+			cy.intercept("PUT", "/api/cart/1", { fixture: "login/success.json" });
 			cy.visit("http://localhost:3000/login");
 			login(faker.internet.email(), faker.word.noun(8));
 			cy.url().should("be.equal", "http://localhost:3000/");
         });
-        it.skip("should show error message if promise is rejected")
+
+		it("should notify if password is incorrect", () => {
+			cy.intercept("POST", "/api/users/login", {fixture: "login/wrongpw.json"});
+			cy.visit("http://localhost:3000/login");
+			cy.findAllByText("Incorrect password. Please try again!").should("not.exist");
+			login(faker.internet.email(), faker.word.noun(8));
+			cy.findAllByText("Incorrect password. Please try again!").should("exist");
+		})
+		it("should notify if account does not exist", () => {
+			cy.intercept("POST", "/api/users/login", {fixture: "login/noAccount.json"});
+			cy.visit("http://localhost:3000/login");
+			cy.findAllByText("This account does not exist!").should("not.exist");
+			login(faker.internet.email(), faker.word.noun(8));
+			cy.findAllByText("This account does not exist!").should("exist");
+		})
 	});
 });

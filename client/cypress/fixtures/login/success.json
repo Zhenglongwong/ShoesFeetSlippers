@@ -1,0 +1,12 @@
+{
+	"status": 200,
+	"payload": {
+		"name": "zhenglong",
+		"email": "zhenglong@gmail.com",
+		"cart": {
+			"_id": "1",
+      "items": [{}]
+		}
+	}
+}
+

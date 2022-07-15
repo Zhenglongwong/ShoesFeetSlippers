@@ -1,8 +1,13 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { atom } from "jotai";
 import Landing from './pages/Landing';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-import ProductCard from './pages/components/ProductCard';
+import Delete from './pages/Delete';
+import ProductDetails from './pages/ProductDetails';
+import type { IUser } from './Types';
+
+export const userAtom = atom<IUser | undefined>(undefined);
 
 function App() {
   return (
@@ -11,15 +16,8 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/card" element={<ProductCard
-                    name={"Nike Air Max Terrascape 90 sneakers in black/dark gray"}
-                    image={
-                        "images.asos-media.com/products/nike-air-max-terrascape-90-sneakers-in-black-dark-gray/200487519-1-black"
-                    }
-                    price={"$140.00"}
-          brand={"Nike"}
-          id={13423}
-                />} />
+        <Route path="/delete" element={<Delete />} />
+        <Route path="/details/:id" element={<ProductDetails />} />
       </Routes>
     </BrowserRouter>
   );

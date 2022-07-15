@@ -1,7 +1,9 @@
-import {iProduct} from "../../Types"
+import {IProduct} from "../../Types"
+import {useNavigate} from "react-router-dom"
 
 
-const ProductCard = ({ name, image, price, brand, id }: iProduct) => {
+const ProductCard = ({name, image, price, priceText, brand, id}: IProduct) => {
+	const navigate = useNavigate()
 	return (
 		<div className="card compact bg-base-100 shadow-xl">
 			<figure >
@@ -10,13 +12,10 @@ const ProductCard = ({ name, image, price, brand, id }: iProduct) => {
 			<div className="card-body">
 				<h1 className="card-title">{name}</h1>
 				<h2>{`By: ${brand}`}</h2>
-				<p>{price}</p>
-				<div className="flex flex-row justify-between">
+				<p>{priceText}</p>
+				<div className="flex flex-row justify-end">
 					<div className="card-actions">
-						<button className="btn btn-primary">Cart</button>
-					</div>
-					<div className="card-actions">
-						<button className="btn btn-primary">Details</button>
+						<button aria-label={String(id)} className="btn btn-primary" onClick={()=> navigate(`/details/${id}`)}>Details</button>
 					</div>
 				</div>
 			</div>
