@@ -1,5 +1,5 @@
-import {IProduct} from "../../Types"
 import {useNavigate} from "react-router-dom"
+import {IProduct} from "../../Types"
 
 
 const ProductCard = ({name, image, price, priceText, brand, id}: IProduct) => {
