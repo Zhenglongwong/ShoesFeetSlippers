@@ -7,7 +7,7 @@ import {useAtom} from "jotai";
 import { useQuery, useQueryClient } from 'react-query'
 import { userAtom } from "../App";
 import type { IUser, ICartItem, ICartContext } from "../Types";
-import { CartContext } from "./context/cart/cartContext";
+import { CartContext } from "../context/cart/cartContext";
 
 interface iValues {
 	email: string;

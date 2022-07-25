@@ -2,7 +2,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { formatter } from "../../Utilites";
 
-interface IDetailsViewProps {
+interface IProductViewProps {
 	images: string[];
 	options: string[];
 	name: string;
@@ -10,7 +10,7 @@ interface IDetailsViewProps {
 	addToCart: (quantity: number, option: string) => void;
 }
 
-const DetailsView = ({ images, options, name, price, addToCart }: IDetailsViewProps) => {
+const ProductView = ({ images, options, name, price, addToCart }: IProductViewProps) => {
 	const priceText = formatter.format(price);
 
 	const initialValues = {
@@ -21,8 +21,8 @@ const DetailsView = ({ images, options, name, price, addToCart }: IDetailsViewPr
 	const validationSchema = Yup.object({
 		quantity: Yup.number(),
 		option: Yup.string().required("Please select an option"),
-    });
-    
+	});
+
 	return (
 		<>
 			<section>
@@ -205,4 +205,4 @@ const DetailsView = ({ images, options, name, price, addToCart }: IDetailsViewPr
 	);
 };
 
-export default DetailsView;
+export default ProductView;

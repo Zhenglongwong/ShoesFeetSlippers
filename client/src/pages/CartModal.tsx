@@ -1,21 +1,20 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment, useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { Dialog, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
-import { CartContext } from "./context/cart/cartContext";
+import { CartContext } from "../context/cart/cartContext";
 import { ICartContext } from "../Types";
 import { formatter } from "../Utilites";
 
-interface ICartModal {
+interface ICartModalProps {
 	open: boolean;
 	setModal: (open: boolean) => void;
 }
 
-const CartModal = ({ open, setModal }: ICartModal) => {
+const CartModal = ({ open, setModal }: ICartModalProps) => {
 	const { cart, dispatchCart, cartTotal } = useContext(CartContext) as ICartContext;
-	const navigate = useNavigate()
+
 
 	const removeItem = (itemIndex: number) => {
 		dispatchCart({ type: "REMOVE", payload: cart[itemIndex] });

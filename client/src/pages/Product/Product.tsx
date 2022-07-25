@@ -2,12 +2,13 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import { useContext } from "react";
 import axios from "axios";
-import Navbar from "./components/Navbar";
-import { CartContext } from "./context/cart/cartContext";
-import type { ICartContext } from "../Types";
-import DetailsView from "./components/DetailsView";
 
-interface IDetails {
+import Navbar from "../Navbar";
+import ProductView from "./ProductView";
+import { CartContext } from "../../context/cart/cartContext";
+import type { ICartContext } from "../../Types";
+
+interface IProduct {
 	name: string;
 	description: string;
 	inStock: boolean;
@@ -20,11 +21,11 @@ interface IDetails {
 	id: string;
 }
 
-const ProductDetails = () => {
+const Product = () => {
 	const { id } = useParams();
 	const { cart, dispatchCart } = useContext(CartContext) as ICartContext;
 
-	const fetchDetails = async (productId: string | undefined): Promise<IDetails> => {
+	const fetchDetails = async (productId: string | undefined): Promise<IProduct> => {
 		if (productId === undefined) {
 			throw new Error("Product ID is undefined");
 		}
@@ -52,7 +53,7 @@ const ProductDetails = () => {
 		isLoading,
 		error,
 		data: details,
-	} = useQuery<IDetails, Error>(["details", id], () => fetchDetails(id), {
+	} = useQuery<IProduct, Error>(["details", id], () => fetchDetails(id), {
 		cacheTime: Infinity,
 		staleTime: Infinity,
 	});
@@ -95,7 +96,7 @@ const ProductDetails = () => {
 	return (
 		<>
 			<Navbar />
-			<DetailsView
+			<ProductView
 				name={details.name}
 				images={details.imagesArr}
 				price={details.price}
@@ -106,4 +107,4 @@ const ProductDetails = () => {
 	);
 };
 
-export default ProductDetails;
+export default Product;

@@ -1,8 +1,8 @@
 import { useEffect, createContext, useReducer, PropsWithChildren, FC, useMemo } from "react";
 import cartReducer from "./cartReducer";
-import type { ICartContext, IUser, ICartItem } from "../../../Types";
+import type { ICartContext, IUser, ICartItem } from "../../Types";
 import { useAtom } from "jotai";
-import { userAtom } from "../../../App";
+import { userAtom } from "../../App";
 import axios from "axios";
 
 export const CartContext = createContext<ICartContext | null>(null);

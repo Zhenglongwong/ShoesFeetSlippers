@@ -2,10 +2,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAtom } from "jotai";
 import { useState, useContext } from "react";
 import axios from "axios";
-import type { ICartContext, ICartItem } from "../../Types";
+import type { ICartContext, ICartItem } from "../Types";
 import { CartContext } from "../context/cart/cartContext";
-import { userAtom } from "../../App";
-import CartModal from "../CartModal";
+import { userAtom } from "../App";
+import CartModal from "./CartModal";
 
 const Navbar = () => {
 	const [user, setUser] = useAtom(userAtom);

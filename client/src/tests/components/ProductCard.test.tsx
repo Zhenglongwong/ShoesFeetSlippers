@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { getByRoleName } from "../utilities";
-import ProductCard from "../../pages/components/ProductCard";
+import ProductCard from "../../pages/Landing/CardView";
 import { BrowserRouter as Router } from "react-router-dom";
 
 describe("Product card", () => {
@@ -13,7 +13,6 @@ describe("Product card", () => {
 						image={
 							"images.asos-media.com/products/nike-air-max-terrascape-90-sneakers-in-black-dark-gray/200487519-1-black"
 						}
-						priceText={"$140.00"}
 						price={140}
 						brand={"Nike"}
 						id={1}
@@ -32,7 +31,6 @@ describe("Product card", () => {
 						image={
 							"images.asos-media.com/products/nike-air-max-terrascape-90-sneakers-in-black-dark-gray/200487519-1-black"
 						}
-						priceText={"$140.00"}
 						price={140}
 						brand={"Nike"}
 						id={1}
@@ -49,7 +47,6 @@ describe("Product card", () => {
 						image={
 							"images.asos-media.com/products/nike-air-max-terrascape-90-sneakers-in-black-dark-gray/200487519-1-black"
 						}
-						priceText={"$140.00"}
 						price={140}
 						brand={"Nike"}
 						id={1}
@@ -66,7 +63,6 @@ describe("Product card", () => {
 						image={
 							"images.asos-media.com/products/nike-air-max-terrascape-90-sneakers-in-black-dark-gray/200487519-1-black"
 						}
-						priceText={"$140.00"}
 						price={140}
 						brand={"Nike"}
 						id={1}
@@ -83,7 +79,6 @@ describe("Product card", () => {
 						image={
 							"images.asos-media.com/products/nike-air-max-terrascape-90-sneakers-in-black-dark-gray/200487519-1-black"
 						}
-						priceText={"$140.00"}
 						price={140}
 						brand={"Nike"}
 						id={1}
