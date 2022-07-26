@@ -54,8 +54,8 @@ const Product = () => {
 		error,
 		data: details,
 	} = useQuery<IProduct, Error>(["details", id], () => fetchDetails(id), {
-		cacheTime: Infinity,
-		staleTime: Infinity,
+		cacheTime: 600000,
+		staleTime: 600000,
 	});
 
 	const addToCart = async (quantity: number, option: string) => {

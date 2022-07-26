@@ -38,7 +38,7 @@ const Landing = () => {
 	const { isLoading, error, data } = useQuery<ICard[], Error>(
 		["products", cataloguePage],
 		() => getProducts(cataloguePage),
-		{ cacheTime: Infinity, staleTime: Infinity }
+		{ cacheTime: 600000, staleTime: 600000 }
 	);
 
 	if (isLoading) {
