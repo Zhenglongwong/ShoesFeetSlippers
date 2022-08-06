@@ -13,6 +13,7 @@ const CartContextProvider: FC<PropsWithChildren> = ({ children }) => {
 
 	const syncCart = async (cart: ICartItem[], user: IUser) => {
 		const { data } = await axios.put(`/api/cart/${user.cartId}`, cart);
+		//add toast if there is an error
 	};
 
 	useEffect(() => {

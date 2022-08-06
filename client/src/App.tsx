@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { atom } from "jotai";
 import Landing from "./pages/Landing/Landing";
-import Signup from "./pages/Signup";
-import Login from "./pages/Login";
+import Signup from "./pages/Signup/Signup";
+import Login from "./pages/Login/Login";
 import Delete from "./pages/Delete";
 import Product from "./pages/Product/Product";
 import type { IUser } from "./Types";

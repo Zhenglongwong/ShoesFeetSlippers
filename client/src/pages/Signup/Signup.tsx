@@ -3,8 +3,11 @@ import { useNavigate, Link } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+import { ToastContainer, toast, Flip } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import SIGNUP_TOASTS from "./TOASTS";
 
-interface iValues {
+interface ICredentials {
 	email: string;
 	password: string;
 	passwordCheck: string;
@@ -12,6 +15,9 @@ interface iValues {
 
 const Signup = () => {
 	const navigate = useNavigate();
+	const [responseStatus, setResponseStatus] = useState(0);
+
+	//formik set up
 	const initialValues = {
 		email: "",
 		name: "",
@@ -30,22 +36,41 @@ const Signup = () => {
 			.required("*Please enter your password again"),
 	});
 
-	const [resStatus, setResStatus] = useState(0);
-	const handleSubmit = async (values: iValues): Promise<void> => {
-		const { data } = await axios.post("/api/users/signup", values);
-		setResStatus(data.status);
+	const handleSubmit = async (credentials: ICredentials): Promise<void> => {
+		const { data } = await axios.post("/api/users/signup", credentials);
+		if (data) {
+			setResponseStatus(data.status);
+		} else {
+			setResponseStatus(500);
+		}
 	};
 
 	useEffect(() => {
-		if (resStatus === 200) {
-			setTimeout(() => {
-				navigate("/login");
-			}, 200);
+		switch (responseStatus) {
+			case 200:
+				toast.success(SIGNUP_TOASTS.SUCCESS);
+				setTimeout(() => {
+					navigate("/login");
+				}, 1000);
+				break;
+			case 400:
+				toast.error(SIGNUP_TOASTS.FAILURE);
+				break;
+			case 409:
+				toast.error(SIGNUP_TOASTS.EXISTING_ACC);
+				break;
+			case 500:
+				toast.error(SIGNUP_TOASTS.ERROR);
+				break;
 		}
-	}, [resStatus, navigate]);
+	}, [responseStatus, navigate]);
 
 	return (
 		<>
+			<ToastContainer
+				position="bottom-left"
+				transition={Flip}
+				autoClose={3000} />
 			<div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
 				<div className="max-w-lg mx-auto text-center">
 					<h1 className="text-2xl font-bold sm:text-3xl">Create an account!</h1>
@@ -55,7 +80,6 @@ const Signup = () => {
 						about to begin!
 					</p>
 				</div>
-				{resStatus === 200 && <h1>Signup successful!</h1>}
 				<Formik
 					initialValues={initialValues}
 					validationSchema={validationSchema}
@@ -130,12 +154,6 @@ const Signup = () => {
 									Signup
 								</button>
 							</div>
-							{resStatus === 400 && (
-								<h1 className="text-orange-500">Signup failed. Please try again.</h1>
-							)}
-							{resStatus === 409 && (
-								<h1 className="text-orange-500">Sorry this account already exists.</h1>
-							)}
 						</Form>
 					)}
 				</Formik>

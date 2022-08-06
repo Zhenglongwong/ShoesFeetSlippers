@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 interface iPaginationProps {
 	currentPage: number;
 	lastPage: number;

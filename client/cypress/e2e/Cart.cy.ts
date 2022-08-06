@@ -2,7 +2,7 @@ import {quantityInput, viewCart, closeCart, addToCart} from "./utils/details.cy"
 
 describe("Cart", () => {
 	it("should show newly added items with the correct quantity", () => {
-		cy.visit("http://localhost:3000/details/201123944");
+		cy.visit("http://localhost:3000/product/201123944");
 		cy.findByRole("radio", { name: "US 7" }).check({ force: true });
 		quantityInput().click().type("2");
 		addToCart().click();
@@ -11,7 +11,7 @@ describe("Cart", () => {
     });
     
 	it("should update quantity if same item is added", () => {
-		cy.visit("http://localhost:3000/details/201123944");
+		cy.visit("http://localhost:3000/product/201123944");
 		cy.findByRole("radio", { name: "US 7" }).check({ force: true });
 		quantityInput().click().type("2");
 		addToCart().click();
@@ -24,7 +24,7 @@ describe("Cart", () => {
     });
     
 	it("should show 2 separate items for different sizes", () => {
-		cy.visit("http://localhost:3000/details/201123944");
+		cy.visit("http://localhost:3000/product/201123944");
 		cy.findByRole("radio", { name: "US 7" }).check({ force: true });
 		addToCart().click();
 		viewCart().click();
@@ -37,7 +37,7 @@ describe("Cart", () => {
     });
     
 	it("should not show an item if its remove button is clicked", () => {
-		cy.visit("http://localhost:3000/details/201123944");
+		cy.visit("http://localhost:3000/product/201123944");
 		cy.findByRole("radio", { name: "US 7" }).check({ force: true });
 		addToCart().click();
 		cy.findByRole("radio", { name: "US 7.5" }).check({ force: true });
@@ -51,7 +51,7 @@ describe("Cart", () => {
     });
     
 	it("should not change quantities of other sizes when updating quantity of one size", () => {
-		cy.visit("http://localhost:3000/details/201123944");
+		cy.visit("http://localhost:3000/product/201123944");
 		cy.findByRole("radio", { name: "US 7" }).check({ force: true });
 		addToCart().click();
 		cy.findByRole("radio", { name: "US 7.5" }).check({ force: true });

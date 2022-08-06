@@ -3,64 +3,82 @@ import { useNavigate, Link } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
-import {useAtom} from "jotai";
-import { useQuery, useQueryClient } from 'react-query'
-import { userAtom } from "../App";
-import type { IUser, ICartItem, ICartContext } from "../Types";
-import { CartContext } from "../context/cart/cartContext";
+import { useAtom } from "jotai";
+import { useQueryClient } from "react-query";
+import { ToastContainer, toast, Flip } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { userAtom } from "../../App";
+import type { ICartItem, ICartContext } from "../../Types";
+import { CartContext } from "../../context/cart/cartContext";
+import LOGIN_TOASTS from "./TOASTS";
 
-interface iValues {
+interface ICredentials {
 	email: string;
 	password: string;
 }
 
 const Login = () => {
-	const [user, setUser] = useAtom(userAtom);
-	const { cart, dispatchCart } = useContext(CartContext) as ICartContext;
 	const navigate = useNavigate();
+	const queryClient = useQueryClient();
+	const [, setUser] = useAtom(userAtom);
+	const { dispatchCart } = useContext(CartContext) as ICartContext;
+	const [responseStatus, setResponseStatus] = useState(0);
+
+	//formik set up
 	const initialValues = {
 		email: "",
 		password: "",
 	};
-
- 	const queryClient = useQueryClient()
- 
+	
 	const validationSchema = Yup.object({
 		email: Yup.string().email("*Please enter a valid email").required("*Please enter your email"),
 		password: Yup.string().required("*Please enter your password"),
 	});
 
-	//hook?
-	const [resStatus, setResStatus] = useState(0);
-	const handleSubmit = async (values: iValues): Promise<void> => {
-		const { data } = await axios.post("/api/users/login", values);
-		setResStatus(data.status);
-		const user = {
-			name: data.payload.name,
-			email: data.payload.email,
-			cartId: data.payload.cart._id,
-		} as IUser;
-		if (data.status === 200) {
-			data.payload.cart.items.map((item: ICartItem) =>
-				dispatchCart({ type: "MERGE", payload: item })
-			);
-			queryClient.invalidateQueries()
-			setUser(user);
+	const handleLogin = async (credentials: ICredentials): Promise<void> => {
+		const { data } = await axios.post("/api/users/login", credentials);
+		if (data) {
+			const responseStatus = data.status;
+			setResponseStatus(responseStatus);
+			if (responseStatus === 200) {
+				data.payload.cart.items.map((item: ICartItem) =>
+					dispatchCart({ type: "MERGE", payload: item })
+				);
+				const user = {
+					name: data.payload.name,
+					email: data.payload.email,
+					cartId: data.payload.cart._id,
+				};
+				setUser(user);
+				queryClient.invalidateQueries();
+			}
 		} else {
-			console.log(data.status, data.payload);
+			setResponseStatus(503);
 		}
 	};
 
 	useEffect(() => {
-		if (resStatus === 200) {
-			setTimeout(() => {
+		switch (responseStatus) {
+			case 200:
 				navigate("/");
-			}, 200);
+				break;
+			case 401:
+				toast.error(LOGIN_TOASTS.WRONG_PASSWORD);
+				break;
+			case 403:
+				toast.error(LOGIN_TOASTS.NO_ACCOUNT);
+				break;
+			case 503:
+				toast.error(LOGIN_TOASTS.SERVER_ERROR);
 		}
-	}, [resStatus, navigate]);
+	}, [responseStatus, navigate]);
 
 	return (
 		<>
+			<ToastContainer
+				position="bottom-left"
+				transition={Flip}
+				autoClose={3000} />
 			<div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
 				<div className="max-w-lg mx-auto">
 					<h1 className="text-2xl font-bold text-center text-indigo-600 sm:text-3xl">
@@ -74,7 +92,7 @@ const Login = () => {
 						initialValues={initialValues}
 						validationSchema={validationSchema}
 						onSubmit={(values, { setSubmitting }) => {
-							handleSubmit(values);
+							handleLogin(values);
 							setTimeout(() => {
 								setSubmitting(false);
 							}, 400);
@@ -120,12 +138,6 @@ const Login = () => {
 										Login
 									</button>
 								</div>
-								{resStatus === 403 && (
-									<h1 className="text-orange-500">This account does not exist!</h1>
-								)}
-								{resStatus === 401 && (
-									<h1 className="text-orange-500">Incorrect password. Please try again!</h1>
-								)}
 							</Form>
 						)}
 					</Formik>

@@ -1,8 +1,8 @@
-import { render, screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { getByRoleName, customRender } from "./utilities";
 import {faker} from "@faker-js/faker";
-import Login from "../pages/Login";
+import { getByRoleName, customRender } from "./utilities";
+import Login from "../pages/Login/Login";
 
 
 describe("Login", () => {
