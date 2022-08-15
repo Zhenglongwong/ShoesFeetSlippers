@@ -2,7 +2,7 @@ import { faker } from "@faker-js/faker";
 import { login, signup } from "../utils/account.cy";
 import { viewCart, closeCart, addToCart } from "../utils/details.cy";
 
-describe("User cart", () => {
+describe("Cart for logged in user", () => {
 	const EMAIL = faker.internet.email();
 	const NAME = `${faker.word.adjective()} ${faker.word.noun()}`;
 	const PASSWORD = faker.word.noun(8);
@@ -14,11 +14,11 @@ describe("User cart", () => {
 		cy.findByRole("button", { name: "Delete" }).click();
 	});
 
-	it("should store changes and updates and retrieve them on login", () => {
+	it("should store changes and retrieve them on login", () => {
 		cy.visit("http://localhost:3000/signup");
 		//signup & login
 		signup(EMAIL, NAME, PASSWORD);
-		cy.wait(500);
+		cy.wait(1500);
 		login(EMAIL, PASSWORD);
 		cy.wait(500);
 

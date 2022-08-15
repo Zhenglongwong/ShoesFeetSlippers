@@ -9,7 +9,7 @@ import CartModal from "./CartModal";
 
 const Navbar = () => {
 	const [user, setUser] = useAtom(userAtom);
-	const { cart, dispatchCart } = useContext(CartContext) as ICartContext;
+	const { dispatchCart } = useContext(CartContext) as ICartContext;
 	const [cartModal, setCartModal] = useState(false);
 	const navigate = useNavigate();
 
