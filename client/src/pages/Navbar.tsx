@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAtom } from "jotai";
 import { useState, useContext } from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
 import type { ICartContext, ICartItem } from "../Types";
 import { CartContext } from "../context/cart/cartContext";
 import { userAtom } from "../App";
@@ -52,18 +53,20 @@ const Navbar = () => {
 							</h2>
 
 							<ul className="flex items-center gap-6 text-sm">
-								<li>
+								<motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
 									<Link className="text-white" to="/">
 										Products
 									</Link>
-								</li>
+								</motion.li>
 								<li>
-									<button
+									<motion.button
+										whileHover={{ scale: 1.1 }}
+										whileTap={{ scale: 0.9 }}
 										className="text-white transition hover:text-white/75"
 										onClick={() => setCartModal(!cartModal)}
 									>
 										View Cart
-									</button>
+									</motion.button>
 								</li>
 								<li>
 									<p className="text-white px-3 py-2.5 bg-teal-600 rounded-md">

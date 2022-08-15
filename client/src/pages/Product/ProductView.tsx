@@ -1,5 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { motion } from "framer-motion";
 import { formatter } from "../../Utilites";
 
 interface IProductViewProps {
@@ -187,12 +188,14 @@ const ProductView = ({ images, options, name, price, addToCart }: IProductViewPr
 												/>
 											</div>
 
-											<button
+											<motion.button
+												whileHover={{scale: 1.1}}
+												whileTap={{scale: 0.9}}
 												type="submit"
 												className="block px-5 py-3 ml-3 text-xs font-medium text-white bg-green-600 rounded hover:bg-green-500"
 											>
 												Add to Cart
-											</button>
+											</motion.button>
 										</div>
 									</Form>
 								)}
