@@ -15,19 +15,19 @@ interface ICartModalProps {
 const CartModal = ({ open, setModal }: ICartModalProps) => {
 	const { cart, dispatchCart, cartTotal } = useContext(CartContext) as ICartContext;
 
-
 	const removeItem = (itemIndex: number) => {
 		dispatchCart({ type: "REMOVE", payload: cart[itemIndex] });
 	};
 
 	const checkout = async () => {
-		try{
-		const {data} = await axios.post('/api/create-checkout-session', cart)
-			window.location.href = `${data.url}`
+		try {
+			const { data } = await axios.post("/api/create-checkout-session", cart);
+			window.location.href = `${data.url}`;
 		} catch (e) {
-			console.log("error", e)
+			console.log("error", e);
 		}
-	}
+	};
+
 	return (
 		<Transition.Root show={open} as={Fragment}>
 			<Dialog as="div" className="relative z-10" onClose={() => setModal(false)}>

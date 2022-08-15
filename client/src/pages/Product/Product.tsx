@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import { useContext } from "react";
 import axios from "axios";
-
 import Navbar from "../Navbar";
 import ProductView from "./ProductView";
 import { CartContext } from "../../context/cart/cartContext";
@@ -10,7 +9,6 @@ import type { ICartContext } from "../../Types";
 
 interface IProduct {
 	name: string;
-	description: string;
 	inStock: boolean;
 	gender: string;
 	brand: string;
@@ -23,30 +21,22 @@ interface IProduct {
 
 const Product = () => {
 	const { id } = useParams();
-	const { cart, dispatchCart } = useContext(CartContext) as ICartContext;
+	const { dispatchCart } = useContext(CartContext) as ICartContext;
 
 	const fetchDetails = async (productId: string | undefined): Promise<IProduct> => {
-		if (productId === undefined) {
-			throw new Error("Product ID is undefined");
-		}
-		try {
-			const { data } = await axios.get(`/api/details/${productId}`);
-			const details = {
-				name: data.data.name,
-				description: data.data.description.slice(data.data.description.indexOf("<ul>")),
-				inStock: data.data.isInStock,
-				gender: data.data.gender,
-				brand: data.data.brand.name,
-				sizeArr: data.data.variants.map((variant: { brandSize: string }) => variant.brandSize),
-				imagesArr: data.data.media.images.map((image: { url: string }) => image.url),
-				priceText: data.data.price.current.text,
-				price: data.data.price.current.value,
-				id: data.data.id,
-			};
-			return details;
-		} catch (err: any) {
-			throw new Error(err);
-		}
+		const { data } = await axios.get(`/api/details/${productId}`);
+		const details = {
+			name: data.data.name,
+			inStock: data.data.isInStock,
+			gender: data.data.gender,
+			brand: data.data.brand.name,
+			sizeArr: data.data.variants.map((variant: { brandSize: string }) => variant.brandSize),
+			imagesArr: data.data.media.images.map((image: { url: string }) => image.url),
+			priceText: data.data.price.current.text,
+			price: data.data.price.current.value,
+			id: data.data.id,
+		};
+		return details;
 	};
 
 	const {

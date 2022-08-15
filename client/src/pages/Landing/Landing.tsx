@@ -12,7 +12,7 @@ const Landing = () => {
 
 	const getProducts = async (page: number): Promise<ICard[]> => {
 		try {
-			const { data } = await axios.get(`api/products/${cataloguePage}`);
+			const { data } = await axios.get(`api/products/${page}`);
 			setLastPage(Math.ceil(data.data.itemCount / 20));
 			const products = data.data.products.map(
 				(product: {

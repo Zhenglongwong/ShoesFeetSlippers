@@ -1,5 +1,5 @@
 import { faker } from "@faker-js/faker";
-import { login } from "./utils/account.cy";
+import { login } from "../utils/account.cy";
 import LOGIN_TOASTS from "../../src/pages/Login/TOASTS";
 
 describe("Login", () => {

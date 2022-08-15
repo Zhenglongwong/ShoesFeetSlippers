@@ -1,5 +1,5 @@
 import { faker } from "@faker-js/faker";
-import { signup } from "./utils/account.cy";
+import { signup } from "../utils/account.cy";
 import SIGNUP_TOASTS from "../../src/pages/Signup/TOASTS";
 
 describe("Signup", () => {
@@ -53,7 +53,7 @@ describe("Signup", () => {
 			cy.findAllByText(SIGNUP_TOASTS.ERROR).should("not.exist");
 		});
 
-		it("should show error message if account exists", () => {
+		it("should notify if account exists", () => {
 			cy.intercept("POST", "/api/users/signup", { fixture: "signup/existing.json" });
 			cy.visit("http://localhost:3000/signup");
 			cy.findAllByText(SIGNUP_TOASTS.EXISTING_ACC).should("not.exist");

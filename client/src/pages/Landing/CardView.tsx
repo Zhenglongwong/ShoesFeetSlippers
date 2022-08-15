@@ -1,14 +1,13 @@
 import { useNavigate } from "react-router-dom";
-import {ICard} from "../../Types";
-import {formatter} from "../../Utilites"
+import { ICard } from "../../Types";
+import { formatter } from "../../Utilites";
 
-
-const ProductCard = ({ name, image, price , brand, id }: ICard) => {
+const ProductCard = ({ name, image, price, brand, id }: ICard) => {
 	const navigate = useNavigate();
 	const viewProduct = (id: number) => {
-		navigate(`/product/${id}`)
-	}
-	const priceText = formatter.format(price)
+		navigate(`/product/${id}`);
+	};
+	const priceText = formatter.format(price);
 
 	return (
 		<div className="card compact bg-base-100 shadow-xl">

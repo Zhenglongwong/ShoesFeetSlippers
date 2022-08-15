@@ -1,4 +1,4 @@
-import {quantityInput, viewCart, closeCart, addToCart} from "./utils/details.cy"
+import {quantityInput, viewCart, closeCart, addToCart} from "../utils/details.cy"
 
 describe("Cart", () => {
 	it("should show newly added items with the correct quantity", () => {

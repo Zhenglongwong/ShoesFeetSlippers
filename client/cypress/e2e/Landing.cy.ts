@@ -1,5 +1,5 @@
 describe("Landing", () => {
-    it.skip("clicking on next page for first time should trigger fetch of next page", () => {
+    it("clicking on next page for first time should trigger fetch of next page", () => {
         cy.intercept("GET", "/api/products/0", {fixture: "res0.json"}).as("res0")
         cy.intercept("GET", "/api/products/1", {fixture: "res1.json"}).as("res1")
 

@@ -1,6 +1,6 @@
 import type { ICartItem } from "../../Types";
 
-const cartReducer = (state: ICartItem[] | [], action: { payload: ICartItem; type: string }) => {
+const cartReducer = (state: ICartItem[] | [], action: { type: string, payload: ICartItem }) => {
 	const itemName = action.payload.name;
 	const itemSize = action.payload.size;
 	const currentCart = [...state];

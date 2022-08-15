@@ -5,7 +5,6 @@ interface iPaginationProps {
 }
 
 const Pagination = ({ currentPage, lastPage, setFetchPage }: iPaginationProps) => {
-
 	const handleNext = (): void => {
 		if (currentPage !== lastPage) {
 			setFetchPage(currentPage);

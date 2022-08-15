@@ -1,29 +1,28 @@
-import { render, screen } from "@testing-library/react";
+import {screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Signup from "../pages/Signup/Signup";
-import {BrowserRouter as Router} from 'react-router-dom'
-import {getByRoleName} from "./utilities"
+import Signup from "./Signup";
+import {getByRoleName, customRender} from "../../tests/utilities"
 
 describe("Signup", () => {
 	describe("user interface should have", () => {
 		test("email field", () => {
-			render(<Router><Signup /></Router>)
+			customRender(<Signup/>)
 			expect(getByRoleName("textbox", "Email")).toBeInTheDocument();
         });
         test("name field", () => {
-			render(<Router><Signup /></Router>)
+			customRender(<Signup/>)
 			expect(getByRoleName("textbox", "Name")).toBeInTheDocument();
 		});
 		test("password field", () => {
-			render(<Router><Signup /></Router>);
+			customRender(<Signup/>);
 			expect(screen.getByLabelText("Password")).toBeInTheDocument();
 		});
 		test("password check field", () => {
-			render(<Router><Signup /></Router>);
+			customRender(<Signup/>);
 			expect(screen.getByLabelText("Enter password again")).toBeInTheDocument();
 		});
 		test("signup button", () => {
-			render(<Router><Signup /></Router>);
+			customRender(<Signup/>);
 			expect(getByRoleName("button", "Signup")).toBeInTheDocument();
 		});
 	});
@@ -31,7 +30,7 @@ describe("Signup", () => {
 	describe("email field should show error message if", () => {
 		test("clicked and empty", async () => {
 			const user = userEvent.setup();
-			render(<Router><Signup /></Router>);
+			customRender(<Signup/>);
 
 			await user.click(getByRoleName("textbox", "Email"));
 			await user.click(screen.getByLabelText("Password"));
@@ -41,7 +40,7 @@ describe("Signup", () => {
 		});
 		test("clicked and not a valid email string", async () => {
 			const user = userEvent.setup();
-			render(<Router><Signup /></Router>);
+			customRender(<Signup/>);
 
 			await user.click(getByRoleName("textbox", "Email"));
 			await user.keyboard("howdy");
@@ -55,7 +54,7 @@ describe("Signup", () => {
     describe("name field should show error message if", () => {
 		test("clicked and empty", async () => {
 			const user = userEvent.setup();
-			render(<Router><Signup /></Router>);
+			customRender(<Signup/>);
 
 			await user.click(getByRoleName("textbox", "Name"));
 			await user.click(getByRoleName("textbox", "Email"));
@@ -69,7 +68,7 @@ describe("Signup", () => {
 	describe("password field should show error message if", () => {
 		test("clicked and empty", async () => {
 			const user = userEvent.setup();
-			render(<Router><Signup /></Router>);
+			customRender(<Signup/>);
 
 			await user.click(screen.getByLabelText("Password"));
 			await user.click(getByRoleName("textbox", "Email"));
@@ -79,7 +78,7 @@ describe("Signup", () => {
 		});
 		test("clicked and less than 8 characters", async () => {
 			const user = userEvent.setup();
-			render(<Router><Signup /></Router>);
+			customRender(<Signup/>);
 
 			await user.click(screen.getByLabelText("Password"));
 			await user.keyboard("1234567");
@@ -98,7 +97,7 @@ describe("Signup", () => {
 	describe("password check field should show error message if", () => {
 		test("clicked and empty", async () => {
 			const user = userEvent.setup();
-			render(<Router><Signup /></Router>);
+			customRender(<Signup/>);
 
 			await user.click(screen.getByLabelText("Enter password again"));
 			await user.click(getByRoleName("textbox", "Email"));
@@ -112,7 +111,7 @@ describe("Signup", () => {
 		});
 		test("clicked and not equal to password field", async () => {
 			const user = userEvent.setup();
-			render(<Router><Signup /></Router>);
+			customRender(<Signup/>);
 
 			await user.click(screen.getByLabelText("Password"));
 			await user.keyboard("123456733");
@@ -129,7 +128,7 @@ describe("Signup", () => {
         test.todo("if any field is empty")
 		test("disabled if email field is wrong", async () => {
 			const user = userEvent.setup();
-			render(<Router><Signup /></Router>);
+			customRender(<Signup/>);
 
 			await user.click(getByRoleName("textbox", "Email"));
 			await user.keyboard("asdfasd");
@@ -138,7 +137,7 @@ describe("Signup", () => {
 		});
 		test("disabled if password field is wrong", async () => {
 			const user = userEvent.setup();
-			render(<Router><Signup /></Router>);
+			customRender(<Signup/>);
 
 			await user.click(screen.getByLabelText("Password"));
 			await user.keyboard("123456");
@@ -148,7 +147,7 @@ describe("Signup", () => {
 		});
 		test("disabled if password check field is wrong", async () => {
 			const user = userEvent.setup();
-			render(<Router><Signup /></Router>);
+			customRender(<Signup/>);
 
 			await user.click(screen.getByLabelText("Password"));
 			await user.keyboard("123456733");
