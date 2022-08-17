@@ -168,8 +168,8 @@ const ProductView = ({ images, options, name, price, addToCart }: IProductViewPr
 															</span>
 														</label>
 													))}
-													<ErrorMessage component="p" name="size" className="text-orange-500" />
 												</div>
+												<ErrorMessage component="p" name="option" className="text-orange-500" />
 											</div>
 										</fieldset>
 

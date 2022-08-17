@@ -49,7 +49,7 @@ app.use("/api/cart", cartController);
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
 app.post("/api/create-checkout-session", async (req, res) => {
-	const items = req.body.map((item, index) => ({
+	const items = req.body.map((item) => ({
 		price_data: {
 			currency: "usd",
 			product_data: {
