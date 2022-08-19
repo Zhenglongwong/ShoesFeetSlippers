@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useQuery } from "react-query";
 import axios from "axios";
 import Navbar from "../Navbar";
@@ -9,6 +9,10 @@ import Pagination from "./Pagination";
 const Landing = () => {
 	const [cataloguePage, setCatPage] = useState(0);
 	const [lastPage, setLastPage] = useState(1);
+
+	useEffect(() => {
+		console.log("hi Xue Er")
+	},[])
 
 	const getProducts = async (page: number): Promise<ICard[]> => {
 		try {
@@ -35,10 +39,8 @@ const Landing = () => {
 		}
 	};
 
-	const { isLoading, error, data } = useQuery<ICard[], Error>(
-		["products", cataloguePage],
-		() => getProducts(cataloguePage),
-		{ cacheTime: 600000, staleTime: 600000 }
+	const { isLoading, error, data } = useQuery<ICard[], Error>(["products", cataloguePage], () =>
+		getProducts(cataloguePage)
 	);
 
 	if (isLoading) {

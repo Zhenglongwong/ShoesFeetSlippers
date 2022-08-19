@@ -6,6 +6,8 @@ const session = require("express-session");
 const path = require("path");
 const userController = require("./controllers/userController");
 const cartController = require("./controllers/cartController");
+const ordersController = require("./controllers/ordersController");
+const stripeController = require("./controllers/stripeController");
 
 //Mock data
 const res0 = require("./client/cypress/fixtures/res0.json");
@@ -44,35 +46,9 @@ app.use(
 app.use(express.static(path.join(__dirname, "./client/build")));
 app.use("/api/users", userController);
 app.use("/api/cart", cartController);
+app.use("/api/orders", ordersController);
+app.use("/api/stripe", stripeController);
 
-//STRIPE
-const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
-
-app.post("/api/create-checkout-session", async (req, res) => {
-	const items = req.body.map((item) => ({
-		price_data: {
-			currency: "usd",
-			product_data: {
-				name: `${item.name} ${item.size}`,
-			},
-			unit_amount: Number(item.price * 100),
-		},
-		quantity: item.quantity,
-	}));
-	try {
-		const session = await stripe.checkout.sessions.create({
-			payment_method_types: ["card"],
-			mode: "payment",
-			line_items: items,
-			success_url: `${process.env.SERVER_URL}`,
-			cancel_url: `${process.env.SERVER_URL}/signup`,
-		});
-		res.send({ url: session.url });
-	} catch (e) {
-		console.log("error", e);
-		res.status(500).json({ error: e.message });
-	}
-});
 
 //MockRoutes
 app.get("/api/products/:id", (req, res) => {

@@ -8,7 +8,7 @@ import axios from "axios";
 export const CartContext = createContext<ICartContext | null>(null);
 
 const CartContextProvider: FC<PropsWithChildren> = ({ children }) => {
-	const [user, setUser] = useAtom(userAtom);
+	const [user, ] = useAtom(userAtom);
 	const [cart, dispatchCart] = useReducer(cartReducer, []);
 
 	const syncCart = async (cart: ICartItem[], user: IUser) => {

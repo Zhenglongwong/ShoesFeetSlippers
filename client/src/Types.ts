@@ -1,4 +1,3 @@
-
 //to create a product card
 export interface ICard {
 	name: string;
@@ -19,8 +18,10 @@ export interface ICartItem {
 	id: string;
 }
 
+export type ICart = ICartItem[] | [];
+
 export interface ICartContext {
-	cart: ICartItem[] | [];
+	cart: ICart;
 	cartTotal: number;
 	dispatchCart: React.Dispatch<{
 		payload: ICartItem;
@@ -32,4 +33,5 @@ export interface IUser {
 	name: string;
 	email: string;
 	cartId: string;
+	ordersId: string;
 }

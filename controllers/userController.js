@@ -3,6 +3,7 @@ const session = require("express-session");
 const bcrypt = require("bcrypt");
 const Users = require("../models/userModel");
 const Cart = require("../models/cartModel");
+const Orders = require("../models/ordersModel");
 
 const Router = express.Router();
 const salt = bcrypt.genSaltSync(9);
@@ -18,12 +19,14 @@ Router.post("/signup", async (req, res) => {
 		res.send({ status: 409 });
 	} else {
 		try {
-			const { _id } = await Cart.create({});
+			const { _id: cart_id } = await Cart.create({});
+			const { _id: orders_id } = await Orders.create({});
 			const newUser = await Users.create({
 				email: email,
 				name: name,
 				password: password,
-				cart: _id,
+				cart: cart_id,
+				orders: orders_id,
 			});
 			res.status(200).send({ status: 200, payload: newUser });
 		} catch (err) {
@@ -76,7 +79,7 @@ Router.post("/delete", async (req, res) => {
 			res.status(404).send({ status: 404, payload: error.message });
 		}
 	} else {
-		res.status(200).send({status: 403, payload: "User does not exist"})
+		res.status(200).send({ status: 403, payload: "User does not exist" });
 	}
 });
 

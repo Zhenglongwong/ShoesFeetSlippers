@@ -29,7 +29,7 @@ const Login = () => {
 		email: "",
 		password: "",
 	};
-	
+
 	const validationSchema = Yup.object({
 		email: Yup.string().email("*Please enter a valid email").required("*Please enter your email"),
 		password: Yup.string().required("*Please enter your password"),
@@ -48,9 +48,11 @@ const Login = () => {
 					name: data.payload.name,
 					email: data.payload.email,
 					cartId: data.payload.cart._id,
+					ordersId: data.payload.orders,
 				};
 				setUser(user);
 				queryClient.invalidateQueries();
+				localStorage.setItem("shoesFeatSlippersEmail", data.payload.email);
 			}
 		} else {
 			setResponseStatus(503);
@@ -71,14 +73,12 @@ const Login = () => {
 			case 503:
 				toast.error(LOGIN_TOASTS.SERVER_ERROR);
 		}
+		setResponseStatus(0);
 	}, [responseStatus, navigate]);
 
 	return (
 		<>
-			<ToastContainer
-				position="bottom-left"
-				transition={Flip}
-				autoClose={3000} />
+			<ToastContainer position="bottom-left" transition={Flip} autoClose={3000} />
 			<div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
 				<div className="max-w-lg mx-auto">
 					<h1 className="text-2xl font-bold text-center text-indigo-600 sm:text-3xl">

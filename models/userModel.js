@@ -6,6 +6,7 @@ const userSchema = Schema({
 	name: String,
 	password: String,
 	cart: { type: Schema.Types.ObjectId, ref: "Cart" },
+	orders: { type: Schema.Types.ObjectId, ref: "Orders" },
 });
 
 const User = mongoose.model("User", userSchema);

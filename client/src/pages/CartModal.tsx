@@ -21,7 +21,7 @@ const CartModal = ({ open, setModal }: ICartModalProps) => {
 
 	const checkout = async () => {
 		try {
-			const { data } = await axios.post("/api/create-checkout-session", cart);
+			const { data } = await axios.post("/api/stripe/create-checkout-session", cart);
 			window.location.href = `${data.url}`;
 		} catch (e) {
 			console.log("error", e);
