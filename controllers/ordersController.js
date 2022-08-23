@@ -1,4 +1,5 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const Orders = require("../models/ordersModel");
 
 const Router = express.Router();
@@ -15,16 +16,17 @@ Router.get("/:id", async (req, res) => {
 });
 
 //deletes an item from an order
-Router.delete("/:id", async (req, res) => {
+Router.put("/:id", async (req, res) => {
 	const ordersID = req.params.id;
-	const { itemID } = req.body;
+	const { itemId } = req.body;
+	// const id = mongoose.Types.ObjectId(itemId);
 	try {
 		const { items } = await Orders.findById(ordersID);
-		const newItems = items.filter((item) => item._id !== itemID);
+		const newItems = items.filter((item) => item.id != itemId )
 		await Orders.findByIdAndUpdate(ordersID, { items: newItems });
-		res.send({ status: 200, payload: newItems });
+		res.send({ status: 200 });
 	} catch (err) {
-		res.send({ status: 400, payload: "Error removing order" });
+		res.send({ status: 400, payload: "Error removing order", err: err });
 	}
 });
 

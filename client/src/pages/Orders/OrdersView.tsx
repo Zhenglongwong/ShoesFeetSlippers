@@ -3,9 +3,10 @@ import { formatter } from "../../Utilites";
 
 interface IOrdersViewProps {
 	orders: IOrders;
+	deleteOrder: (itemId: string) => void;
 }
 
-const OrdersView = ({ orders }: IOrdersViewProps) => {
+const OrdersView = ({ orders, deleteOrder }: IOrdersViewProps) => {
 	return (
 		<div className="overflow-x-auto w-full">
 			<table className="table w-full">
@@ -22,7 +23,7 @@ const OrdersView = ({ orders }: IOrdersViewProps) => {
 				</thead>
 				<tbody>
 					{orders.map((item) => (
-						<tr>
+						<tr key={item.id}>
 							<td>
 								<div className="flex items-center space-x-3">
 									<div className="avatar">
@@ -42,7 +43,9 @@ const OrdersView = ({ orders }: IOrdersViewProps) => {
 							<td>{`${item.orderDate}`.split(" ").slice(1, 4).join(" ")}</td>
 							<td>To ship</td>
 							<th>
-								<button className="btn btn-ghost btn-xs">&#10003;</button>
+								<button className="btn btn-ghost btn-xs" onClick={() => deleteOrder(item._id)}>
+									&#10003;
+								</button>
 							</th>
 						</tr>
 					))}

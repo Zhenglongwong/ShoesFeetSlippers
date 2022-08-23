@@ -12,7 +12,7 @@ Router.put("/:id", async (req, res) => {
 			const newCart = await Cart.findByIdAndUpdate(cartID, { items: cart });
 			res.send({ status: 200 });
 		} catch (err) {
-			res.status(400).send({ status: 400 });
+			res.status(400).send({ status: 400, err });
 		}
 	}
 });
