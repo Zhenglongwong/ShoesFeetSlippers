@@ -15,6 +15,9 @@ const Orders = () => {
 		const { data } = await axios.get(`/api/orders/${ordersId}`);
 		return data.payload;
 	};
+	const deleteOrder = async (ordersId: string, itemId: string) => {
+		const {data} = await axios.delete(`/api/orders/${ordersId}`)
+	};
 
 	const {
 		isLoading,
