@@ -1,6 +1,6 @@
 import { useEffect, createContext, useReducer, PropsWithChildren, FC, useMemo } from "react";
 import cartReducer from "./cartReducer";
-import type { ICartContext, IUser, ICartItem } from "../../Types";
+import type { ICartContext, IUser, ICart } from "../../Types";
 import { useAtom } from "jotai";
 import { userAtom } from "../../App";
 import axios from "axios";
@@ -11,7 +11,7 @@ const CartContextProvider: FC<PropsWithChildren> = ({ children }) => {
 	const [user, ] = useAtom(userAtom);
 	const [cart, dispatchCart] = useReducer(cartReducer, []);
 
-	const syncCart = async (cart: ICartItem[], user: IUser) => {
+	const syncCart = async (cart: ICart, user: IUser) => {
 		const { data } = await axios.put(`/api/cart/${user.cartId}`, cart);
 		//add toast if there is an error
 	};

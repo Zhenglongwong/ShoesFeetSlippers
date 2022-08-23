@@ -1,5 +1,4 @@
-//to create a product card
-export interface ICard {
+export interface IProductCard {
 	name: string;
 	image: string;
 	price: number;
@@ -7,7 +6,6 @@ export interface ICard {
 	id: number;
 }
 
-//for all cart related actions
 export interface ICartItem {
 	name: string;
 	image: string;
@@ -19,6 +17,12 @@ export interface ICartItem {
 }
 
 export type ICart = ICartItem[] | [];
+
+export interface IOrdersItems extends ICartItem {
+	orderDate: Date;
+}
+
+export type IOrders = IOrdersItems[] | [];
 
 export interface ICartContext {
 	cart: ICart;

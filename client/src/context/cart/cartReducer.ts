@@ -1,4 +1,4 @@
-import type { ICartItem } from "../../Types";
+import type {ICartItem} from "../../Types";
 
 const cartReducer = (state: ICartItem[] | [], action: { type: string, payload: ICartItem }) => {
 	const itemName = action.payload.name;

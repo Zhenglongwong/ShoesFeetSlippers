@@ -25,7 +25,7 @@ const Product = () => {
 
 	const fetchDetails = async (productId: string | undefined): Promise<IProduct> => {
 		const { data } = await axios.get(`/api/details/${productId}`);
-		const details = {
+		const product = {
 			name: data.data.name,
 			inStock: data.data.isInStock,
 			gender: data.data.gender,
@@ -36,63 +36,49 @@ const Product = () => {
 			price: data.data.price.current.value,
 			id: data.data.id,
 		};
-		return details;
+		return product;
 	};
 
 	const {
 		isLoading,
 		error,
-		data: details,
+		data: product,
 	} = useQuery<IProduct, Error>(["details", id], () => fetchDetails(id), {
 		cacheTime: 600000,
 		staleTime: 600000,
 	});
 
 	const addToCart = async (quantity: number, option: string) => {
-		if (details) {
+		if (product) {
 			dispatchCart({
 				type: "ADD",
 				payload: {
-					name: details.name,
-					image: details.imagesArr[0],
-					priceText: details.priceText,
-					price: details.price,
+					name: product.name,
+					image: product.imagesArr[0],
+					priceText: product.priceText,
+					price: product.price,
 					quantity: quantity,
 					size: option,
-					id: String(details.id),
+					id: String(product.id),
 				},
 			});
 		}
 	};
 
-	if (isLoading) {
-		return (
-			<div>
-				<Navbar />
-				<p>Loading...</p>
-			</div>
-		);
-	}
-
-	if (error || !details) {
-		return (
-			<div>
-				<Navbar />
-				<p>Error fetching data</p>
-			</div>
-		);
-	}
-
 	return (
 		<>
 			<Navbar />
-			<ProductView
-				name={details.name}
-				images={details.imagesArr}
-				price={details.price}
-				options={details.sizeArr}
-				addToCart={addToCart}
-			/>
+			{isLoading && <div> Loading product details... </div>}
+			{error && <div> Error loading product details... </div>}
+			{product && (
+				<ProductView
+					name={product.name}
+					images={product.imagesArr}
+					price={product.price}
+					options={product.sizeArr}
+					addToCart={addToCart}
+				/>
+			)}
 		</>
 	);
 };

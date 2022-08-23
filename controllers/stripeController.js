@@ -35,12 +35,14 @@ Router.post("/create-checkout-session", async (req, res) => {
 
 Router.post("/success", async (req, res) => {
 	const { email } = req.body;
+	const orderDate = new Date()
 	if (req.session.user && email) {
 		try {
 			const user = await Users.findOne({ email: email });
 			const { cart, orders } = user;
 			const { items } = await Cart.findById(cart);
-			await Orders.findByIdAndUpdate(orders, { $push: { items: items } });
+			const orderedItems = items.map(item => ({...item, orderDate}))
+			await Orders.findByIdAndUpdate(orders, { $push: { items: orderedItems } });
 			await Cart.findByIdAndUpdate(cart, { $set: { items: [] } });
 			res.send({ status: 200, payload: user });
 		} catch (err) {

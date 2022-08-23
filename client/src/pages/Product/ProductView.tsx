@@ -189,8 +189,8 @@ const ProductView = ({ images, options, name, price, addToCart }: IProductViewPr
 											</div>
 
 											<motion.button
-												whileHover={{scale: 1.1}}
-												whileTap={{scale: 0.9}}
+												whileHover={{ scale: 1.1 }}
+												whileTap={{ scale: 0.9 }}
 												type="submit"
 												className="block px-5 py-3 ml-3 text-xs font-medium text-white bg-green-600 rounded hover:bg-green-500"
 											>

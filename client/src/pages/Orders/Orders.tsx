@@ -2,9 +2,10 @@ import { useNavigate } from "react-router-dom";
 import { useAtom } from "jotai";
 import { useQuery } from "react-query";
 import axios from "axios";
-import { userAtom } from "../App";
-import { ICart, IUser } from "../Types";
-import Navbar from "./Navbar";
+import { userAtom } from "../../App";
+import { IOrders, IUser } from "../../Types";
+import Navbar from "../Navbar";
+import OrdersView from "./OrdersView";
 
 const Orders = () => {
 	const navigate = useNavigate();
@@ -14,46 +15,24 @@ const Orders = () => {
 		const { data } = await axios.get(`/api/orders/${ordersId}`);
 		return data.payload;
 	};
+
 	const {
 		isLoading,
 		error,
 		data: orders,
-	} = useQuery<ICart, Error>(["orders"], () => fetchOrders(ordersId));
+	} = useQuery<IOrders, Error>(["orders"], () => fetchOrders(ordersId));
 
 	if (!user) {
 		navigate("/login");
-	}
-
-	if (isLoading) {
-		return (
-			<>
-				<Navbar />
-				<div> Loading orders... </div>
-			</>
-		);
-	}
-
-	if (error || !orders) {
-		return (
-			<>
-				<div> Error loading errors... </div>
-			</>
-		);
 	}
 
 	return (
 		<>
 			<Navbar />
 			<h2> ORDERS</h2>
-			{orders ? (
-				orders.map((order) => (
-					<div>
-						{order.name} || {order.quantity} || {order.size}
-					</div>
-				))
-			) : (
-				<div> Error loading errors... </div>
-			)}
+			{isLoading && <div> Loading orders... </div>}
+			{error && <div> Error loading orders... </div>}
+			{orders && <OrdersView orders={orders} />}
 		</>
 	);
 };

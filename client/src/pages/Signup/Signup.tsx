@@ -36,7 +36,7 @@ const Signup = () => {
 			.required("*Please enter your password again"),
 	});
 
-	const handleSubmit = async (credentials: ICredentials): Promise<void> => {
+	const handleSignup = async (credentials: ICredentials): Promise<void> => {
 		const { data } = await axios.post("/api/users/signup", credentials);
 		if (data) {
 			setResponseStatus(data.status);
@@ -52,25 +52,26 @@ const Signup = () => {
 				setTimeout(() => {
 					navigate("/login");
 				}, 1000);
+				setResponseStatus(0);
 				break;
 			case 400:
 				toast.error(SIGNUP_TOASTS.FAILURE);
+				setResponseStatus(0);
 				break;
 			case 409:
 				toast.error(SIGNUP_TOASTS.EXISTING_ACC);
+				setResponseStatus(0);
 				break;
 			case 500:
 				toast.error(SIGNUP_TOASTS.ERROR);
+				setResponseStatus(0);
 				break;
 		}
 	}, [responseStatus, navigate]);
 
 	return (
 		<>
-			<ToastContainer
-				position="bottom-left"
-				transition={Flip}
-				autoClose={3000} />
+			<ToastContainer position="bottom-left" transition={Flip} autoClose={3000} />
 			<div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
 				<div className="max-w-lg mx-auto text-center">
 					<h1 className="text-2xl font-bold sm:text-3xl">Create an account!</h1>
@@ -84,7 +85,7 @@ const Signup = () => {
 					initialValues={initialValues}
 					validationSchema={validationSchema}
 					onSubmit={(values, { setSubmitting }) => {
-						handleSubmit(values);
+						handleSignup(values);
 						setTimeout(() => {
 							setSubmitting(false);
 						}, 400);

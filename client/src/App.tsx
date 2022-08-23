@@ -4,7 +4,7 @@ import Landing from "./pages/Landing/Landing";
 import Signup from "./pages/Signup/Signup";
 import Login from "./pages/Login/Login";
 import Delete from "./pages/Delete";
-import Orders from "./pages/Orders";
+import Orders from "./pages/Orders/Orders";
 import Product from "./pages/Product/Product";
 import StripeRedirect from "./pages/StripeRedirect";
 import type { IUser } from "./Types";

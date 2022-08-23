@@ -11,6 +11,7 @@ const ordersSchema = Schema({
 			quantity: Number,
 			size: String,
 			productId: String,
+			orderDate: Date,
 		},
 	],
 });

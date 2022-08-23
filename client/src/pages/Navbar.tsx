@@ -69,6 +69,16 @@ const Navbar = () => {
 									</motion.button>
 								</li>
 								<li>
+									<motion.button
+										whileHover={{ scale: 1.1 }}
+										whileTap={{ scale: 0.9 }}
+										className="text-white transition hover:text-white/75"
+										onClick={() => navigate("/orders")}
+									>
+										View Orders
+									</motion.button>
+								</li>
+								<li>
 									<p className="text-white px-3 py-2.5 bg-teal-600 rounded-md">
 										{user !== undefined ? user.name : "Guest"}
 									</p>
