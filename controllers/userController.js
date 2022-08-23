@@ -74,6 +74,7 @@ Router.post("/delete", async (req, res) => {
 		try {
 			await Users.deleteOne({ email: email });
 			await Cart.deleteOne({ _id: existingUser.cart });
+			await Orders.deleteOne({ _id: existingUser.orders });
 			res.status(200).send({ status: 200 });
 		} catch (error) {
 			res.status(404).send({ status: 404, payload: error.message });

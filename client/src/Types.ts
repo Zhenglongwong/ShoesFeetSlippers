@@ -19,7 +19,7 @@ export interface ICartItem {
 export type ICart = ICartItem[] | [];
 
 export interface IOrdersItems extends ICartItem {
-	orderDate: Date;
+	orderDate: String;
 }
 
 export type IOrders = IOrdersItems[] | [];

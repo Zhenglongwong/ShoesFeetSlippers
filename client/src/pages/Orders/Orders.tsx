@@ -29,7 +29,6 @@ const Orders = () => {
 	return (
 		<>
 			<Navbar />
-			<h2> ORDERS</h2>
 			{isLoading && <div> Loading orders... </div>}
 			{error && <div> Error loading orders... </div>}
 			{orders && <OrdersView orders={orders} />}
