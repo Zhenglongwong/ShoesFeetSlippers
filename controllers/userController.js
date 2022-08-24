@@ -16,7 +16,7 @@ Router.post("/signup", async (req, res) => {
 
 	if (existingUser) {
 		//already signed up
-		res.send({ status: 409 });
+		res.status(409).send({ status: 409 });
 	} else {
 		try {
 			const { _id: cart_id } = await Cart.create({});
@@ -28,9 +28,9 @@ Router.post("/signup", async (req, res) => {
 				cart: cart_id,
 				orders: orders_id,
 			});
-			res.status(200).send({ status: 200, payload: newUser });
+			res.send({ status: 200, payload: newUser });
 		} catch (err) {
-			res.send({ status: 400, payload: err.message });
+			res.status(500).send({ status: 500, payload: err.message });
 		}
 	}
 });
@@ -42,27 +42,27 @@ Router.post("/login", async (req, res) => {
 
 	if (!existingUser) {
 		//not signed up
-		res.send({ status: 403, payload: "Not existing user" });
+		res.status(403).send({ status: 403, payload: "Not existing user" });
 	} else if (bcrypt.compareSync(password, existingUser.password)) {
 		//login success
 		req.session.user = existingUser;
 		res.send({ status: 200, payload: existingUser });
 	} else {
 		//incorrect password
-		res.send({ status: 401, payload: "Incorrect password" });
+		res.status(401).send({ status: 401, payload: "Incorrect password" });
 	}
 });
 
 //Logout
 Router.get("/logout", async (req, res) => {
 	if (!req.session.user) {
-		res.send({ status: 404, payload: "Not logged in" });
+		res.send({ status: 401, payload: "Not logged in" });
 	} else {
 		try {
 			req.session.destroy(session);
 			res.send({ status: 200 });
 		} catch (error) {
-			res.send({ status: 404, payload: "Error logging out" });
+			res.send({ status: 500, payload: "Error logging out" });
 		}
 	}
 });

@@ -34,8 +34,8 @@ Router.post("/create-checkout-session", async (req, res) => {
 });
 
 Router.post("/success", async (req, res) => {
-	const { email } = req.body;
 	if (req.session.user && email) {
+		const { email } = req.body;
 		try {
 			const user = await Users.findOne({ email: email });
 			const { cart, orders } = user;
@@ -44,10 +44,10 @@ Router.post("/success", async (req, res) => {
 			await Cart.findByIdAndUpdate(cart, { $set: { items: [] } });
 			res.send({ status: 200, payload: user });
 		} catch (err) {
-			res.send({ status: 400, payload: err });
+			res.status(500).send({ status: 500, payload: err });
 		}
 	} else {
-		res.send({ status: 400, payload: "No cookie or email" });
+		res.send({ status: 401, payload: "No cookie or email" });
 	}
 });
 

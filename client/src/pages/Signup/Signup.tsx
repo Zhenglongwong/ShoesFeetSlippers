@@ -54,16 +54,12 @@ const Signup = () => {
 				}, 1000);
 				setResponseStatus(0);
 				break;
-			case 400:
+			case 500:
 				toast.error(SIGNUP_TOASTS.FAILURE);
 				setResponseStatus(0);
 				break;
 			case 409:
 				toast.error(SIGNUP_TOASTS.EXISTING_ACC);
-				setResponseStatus(0);
-				break;
-			case 500:
-				toast.error(SIGNUP_TOASTS.ERROR);
 				setResponseStatus(0);
 				break;
 		}
