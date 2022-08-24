@@ -48,7 +48,7 @@ const Product = () => {
 		staleTime: 600000,
 	});
 
-	const addToCart = async (quantity: number, option: string) => {
+	const addToCart = (quantity: number, option: string) => {
 		if (product) {
 			dispatchCart({
 				type: "ADD",
