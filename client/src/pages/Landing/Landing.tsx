@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useQuery } from "react-query";
 import axios from "axios";
 import Navbar from "../Navbar";
@@ -12,7 +12,6 @@ const Landing = () => {
 
 	const getProducts = async (page: number): Promise<IProductCard[]> => {
 		const { data } = await axios.get(`api/products/${page}`);
-		setLastPage(Math.ceil(data.data.itemCount / 20));
 		const products = data.data.products.map(
 			(product: {
 				name: string;
@@ -38,6 +37,10 @@ const Landing = () => {
 	} = useQuery<IProductCard[], Error>(["products", cataloguePage], () =>
 		getProducts(cataloguePage)
 	);
+
+	useEffect(() => {
+
+	}, [products]);
 
 	return (
 		<>

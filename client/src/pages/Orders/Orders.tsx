@@ -6,7 +6,7 @@ import axios from "axios";
 import { ToastContainer, toast, Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { userAtom } from "../../App";
-import { IOrders, IUser } from "../../Types";
+import { IOrders} from "../../Types";
 import Navbar from "../Navbar";
 import OrdersView from "./OrdersView";
 
@@ -34,8 +34,7 @@ const Orders = () => {
 
 	const deleteOrder = async (itemId: string) => {
 		try {
-			const { data } = await axios.put(`/api/orders/${ordersId}`, { itemId });
-			toast.success(data.status);
+			await axios.put(`/api/orders/${ordersId}`, { itemId });
 			refetch();
 		} catch (err: any) {
 			toast.error("error deleting order: ", err);

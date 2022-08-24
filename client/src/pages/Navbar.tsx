@@ -68,16 +68,19 @@ const Navbar = () => {
 										View Cart
 									</motion.button>
 								</li>
-								<li>
-									<motion.button
-										whileHover={{ scale: 1.1 }}
-										whileTap={{ scale: 0.9 }}
-										className="text-white transition hover:text-white/75"
-										onClick={() => navigate("/orders")}
-									>
-										View Orders
-									</motion.button>
-								</li>
+								{user && (
+									<li>
+										<motion.button
+											whileHover={{ scale: 1.1 }}
+											whileTap={{ scale: 0.9 }}
+											className="text-white transition hover:text-white/75"
+											onClick={() => navigate("/orders")}
+										>
+											View Orders
+										</motion.button>
+									</li>
+								)}
+
 								<li>
 									<p className="text-white px-3 py-2.5 bg-teal-600 rounded-md">
 										{user !== undefined ? user.name : "Guest"}
@@ -89,7 +92,7 @@ const Navbar = () => {
 
 					<div className="flex items-center gap-4">
 						<div className="sm:gap-4 sm:flex">
-							{user === undefined && (
+							{!user && (
 								<>
 									<Link
 										className="px-5 py-2.5 text-sm font-medium text-white bg-teal-600 rounded-md shadow"
@@ -108,7 +111,7 @@ const Navbar = () => {
 									</div>
 								</>
 							)}
-							{user !== undefined && (
+							{user && (
 								<div className="hidden sm:gap-4 sm:flex">
 									<button
 										className="px-5 py-2.5 text-sm font-medium text-white bg-gray-800 rounded-md"
@@ -130,11 +133,7 @@ const Navbar = () => {
 									stroke="currentColor"
 									strokeWidth="2"
 								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										d="M4 6h16M4 12h16M4 18h16"
-									/>
+									<path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
 								</svg>
 							</button>
 						</div>

@@ -19,7 +19,6 @@ Router.get("/:id", async (req, res) => {
 Router.put("/:id", async (req, res) => {
 	const ordersID = req.params.id;
 	const { itemId } = req.body;
-	// const id = mongoose.Types.ObjectId(itemId);
 	try {
 		const { items } = await Orders.findById(ordersID);
 		const newItems = items.filter((item) => item.id != itemId )
