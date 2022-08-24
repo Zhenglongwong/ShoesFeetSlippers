@@ -14,11 +14,11 @@ Router.put("/:id", async (req, res) => {
 				await Cart.findByIdAndUpdate(cartID, { items: cart });
 				res.send({ status: 200 });
 			} catch (err) {
-				res.status(400).send({ status: 400, err });
+				res.send({ status: 400, err });
 			}
 		}
 	} else {
-		res.status(401).send({ status: 401, payload: "User session expired. Please log in." })
+		res.send({ status: 401, payload: "User session expired. Please log in." })
 	}
 	
 });

@@ -14,10 +14,10 @@ Router.get("/:id", async (req, res) => {
 			const orders = await Orders.findById(ordersID);
 			res.send({ status: 200, payload: orders.items });
 		} catch (err) {
-			res.status(500).send({ status: err });
+			res.send({ status: err });
 		}
 	} else {
-		res.status(401).send({ status: 401, payload: "User session expired. Please log in." });
+		res.send({ status: 401, payload: "User session expired. Please log in." });
 	}
 });
 
@@ -32,10 +32,10 @@ Router.put("/:id", async (req, res) => {
 			await Orders.findByIdAndUpdate(ordersID, { items: newItems });
 			res.send({ status: 200 });
 		} catch (err) {
-			res.status(500).send({ status: 500, payload: "Error removing order", err: err });
+			res.send({ status: 500, payload: "Error removing order", err: err });
 		}
 	} else {
-		res.status(401).send({ status: 401, payload: "User session expired. Please log in." });
+		res.send({ status: 401, payload: "User session expired. Please log in." });
 	}
 });
 

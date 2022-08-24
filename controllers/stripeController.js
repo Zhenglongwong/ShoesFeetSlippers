@@ -28,7 +28,6 @@ Router.post("/create-checkout-session", async (req, res) => {
 		});
 		res.send({ url: session.url });
 	} catch (e) {
-		console.log("error", e);
 		res.status(500).json({ error: e.message });
 	}
 });
@@ -44,7 +43,7 @@ Router.post("/success", async (req, res) => {
 			await Cart.findByIdAndUpdate(cart, { $set: { items: [] } });
 			res.send({ status: 200, payload: user });
 		} catch (err) {
-			res.status(500).send({ status: 500, payload: err });
+			res.send({ status: 500, payload: err });
 		}
 	} else {
 		res.send({ status: 401, payload: "No cookie or email" });

@@ -16,7 +16,7 @@ Router.post("/signup", async (req, res) => {
 
 	if (existingUser) {
 		//already signed up
-		res.status(409).send({ status: 409 });
+		res.send({ status: 409 });
 	} else {
 		try {
 			const { _id: cart_id } = await Cart.create({});
@@ -30,7 +30,7 @@ Router.post("/signup", async (req, res) => {
 			});
 			res.send({ status: 200, payload: newUser });
 		} catch (err) {
-			res.status(500).send({ status: 500, payload: err.message });
+			res.send({ status: 500, payload: err.message });
 		}
 	}
 });
@@ -42,14 +42,14 @@ Router.post("/login", async (req, res) => {
 
 	if (!existingUser) {
 		//not signed up
-		res.status(403).send({ status: 403, payload: "Not existing user" });
+		res.send({ status: 403, payload: "Not existing user" });
 	} else if (bcrypt.compareSync(password, existingUser.password)) {
 		//login success
 		req.session.user = existingUser;
 		res.send({ status: 200, payload: existingUser });
 	} else {
 		//incorrect password
-		res.status(401).send({ status: 401, payload: "Incorrect password" });
+		res.send({ status: 401, payload: "Incorrect password" });
 	}
 });
 
@@ -75,12 +75,12 @@ Router.post("/delete", async (req, res) => {
 			await Users.deleteOne({ email: email });
 			await Cart.deleteOne({ _id: existingUser.cart });
 			await Orders.deleteOne({ _id: existingUser.orders });
-			res.status(200).send({ status: 200 });
+			res.send({ status: 200 });
 		} catch (error) {
-			res.status(404).send({ status: 404, payload: error.message });
+			res.send({ status: 404, payload: error.message });
 		}
 	} else {
-		res.status(200).send({ status: 403, payload: "User does not exist" });
+		res.send({ status: 403, payload: "User does not exist" });
 	}
 });
 
