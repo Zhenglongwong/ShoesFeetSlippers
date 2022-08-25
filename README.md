@@ -24,7 +24,7 @@ This is my final project as part of General Assembly's 12 week software engineer
 
 #### Backend
 * NodeJS + ExpressJS - backend framework
-* MongoDB + Mongoose - non-relational database + ORM
+* MongoDB + Mongoose - non-relational database + ODM
   
 #### Testing
 * Jest - unit testing of components and functions
