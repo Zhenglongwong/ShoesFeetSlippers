@@ -4,7 +4,6 @@ import {faker} from "@faker-js/faker";
 import { getByRoleName, customRender } from "../../tests/utilities";
 import Login from "./Login";
 
-
 describe("Login", () => {
 	describe("user interface should have", () => {
 		test("email field", () => {

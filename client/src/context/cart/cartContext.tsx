@@ -14,7 +14,7 @@ const CartContextProvider: FC<PropsWithChildren> = ({ children }) => {
 
 	const syncCart = async (cart: ICart, user: IUser) => {
 		try {
-			await axios.put(`/api/cart/${user.cartId}`, cart);
+			await axios.put(`/api/cart/${user.ordersId}`, cart);
 		} catch (err: any) {
 			toast.error(err);
 		}
