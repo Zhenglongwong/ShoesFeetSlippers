@@ -31,7 +31,6 @@ describe("Signup", () => {
 			cy.findAllByText(SIGNUP_TOASTS.SUCCESS).should("exist");
 			cy.findAllByText(SIGNUP_TOASTS.FAILURE).should("not.exist");
 			cy.findAllByText(SIGNUP_TOASTS.EXISTING_ACC).should("not.exist");
-			cy.findAllByText(SIGNUP_TOASTS.ERROR).should("not.exist");
 		});
 
 		it("should redirect to login if successful", () => {
@@ -50,7 +49,6 @@ describe("Signup", () => {
 			cy.findAllByText(SIGNUP_TOASTS.FAILURE).should("exist");
 			cy.findAllByText(SIGNUP_TOASTS.SUCCESS).should("not.exist");
 			cy.findAllByText(SIGNUP_TOASTS.EXISTING_ACC).should("not.exist");
-			cy.findAllByText(SIGNUP_TOASTS.ERROR).should("not.exist");
 		});
 
 		it("should notify if account exists", () => {
@@ -61,7 +59,6 @@ describe("Signup", () => {
 			cy.findAllByText(SIGNUP_TOASTS.EXISTING_ACC).should("exist");
 			cy.findAllByText(SIGNUP_TOASTS.FAILURE).should("not.exist");
 			cy.findAllByText(SIGNUP_TOASTS.SUCCESS).should("not.exist");
-			cy.findAllByText(SIGNUP_TOASTS.ERROR).should("not.exist");
 		});
 	});
 });

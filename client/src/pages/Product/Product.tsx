@@ -59,7 +59,7 @@ const Product = () => {
 					price: product.price,
 					quantity: quantity,
 					size: option,
-					id: String(product.id),
+					productId: String(product.id),
 				},
 			});
 		}

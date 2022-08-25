@@ -10,6 +10,7 @@ describe("Cart for logged in user", () => {
 	const item2Id = "201123944";
 	after(() => {
 		cy.visit("http://localhost:3000/delete");
+		cy.wait(500)
 		cy.findByRole("textbox", { name: "Email" }).click().type(EMAIL);
 		cy.findByRole("button", { name: "Delete" }).click();
 	});

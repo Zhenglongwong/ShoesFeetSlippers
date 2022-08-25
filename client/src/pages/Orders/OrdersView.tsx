@@ -23,7 +23,7 @@ const OrdersView = ({ orders, deleteOrder }: IOrdersViewProps) => {
 				</thead>
 				<tbody>
 					{orders.map((item) => (
-						<tr key={item.id}>
+						<tr key={item.productId}>
 							<td>
 								<div className="flex items-center space-x-3">
 									<div className="avatar">

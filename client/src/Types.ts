@@ -13,7 +13,7 @@ export interface ICartItem {
 	price: number;
 	quantity: number;
 	size: string;
-	id: string;
+	productId: string;
 }
 
 export type ICart = ICartItem[] | [];
@@ -26,7 +26,7 @@ export interface IOrdersItems extends ICartItem {
 export type IOrders = IOrdersItems[] | [];
 
 export interface ICartContext {
-	cart: ICart;
+	cart: ICartItem[];
 	cartTotal: number;
 	dispatchCart: React.Dispatch<{
 		payload: ICartItem;

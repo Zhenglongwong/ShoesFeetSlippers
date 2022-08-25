@@ -1,5 +1,5 @@
 import { faker } from "@faker-js/faker";
-import {login, signup} from "../utils/account.cy";
+import { login, signup } from "../utils/account.cy";
 
 describe("Navbar", () => {
 	it("links to landing page", () => {
@@ -23,18 +23,19 @@ describe("Navbar", () => {
 	it("does shows logout but not links for login or sign up when logged in", () => {
 		const EMAIL = faker.internet.email();
 		const NAME = `${faker.word.adjective()} ${faker.word.noun()}`;
-    const PASSWORD = faker.word.noun(8);
+		const PASSWORD = faker.word.noun(8);
 		cy.visit("http://localhost:3000/signup");
-    signup(EMAIL, NAME, PASSWORD);
-    cy.wait(2000)
-    login(EMAIL, PASSWORD);
+		signup(EMAIL, NAME, PASSWORD);
+		cy.wait(2000);
+		login(EMAIL, PASSWORD);
 
-    cy.findByRole("link", {name: "Signup"}).should('not.exist')
-    cy.findByRole("link", {name: "Login"}).should('not.exist')
-    cy.findByRole("button", {name: "Logout"}).should('exist')
+		cy.findByRole("link", { name: "Signup" }).should("not.exist");
+		cy.findByRole("link", { name: "Login" }).should("not.exist");
+		cy.findByRole("button", { name: "Logout" }).should("exist");
 
-    //clean up
-    cy.visit("http://localhost:3000/delete");
+		//clean up
+		cy.visit("http://localhost:3000/delete");
+		cy.wait(500);
 		cy.findByRole("textbox", { name: "Email" }).click().type(EMAIL);
 		cy.findByRole("button", { name: "Delete" }).click();
 	});

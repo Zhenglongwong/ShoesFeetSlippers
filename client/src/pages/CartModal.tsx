@@ -92,7 +92,7 @@ const CartModal = ({ open, setModal }: ICartModalProps) => {
 																	<div>
 																		<div className="flex justify-between text-base font-medium text-gray-900">
 																			<h3>
-																				<Link to={`/details/${product.id}`}> {product.name} </Link>
+																				<Link to={`/details/${product.productId}`}> {product.name} </Link>
 																			</h3>
 																			<p className="ml-4">{product.priceText}</p>
 																		</div>

@@ -33,7 +33,7 @@ Router.post("/create-checkout-session", async (req, res) => {
 });
 
 Router.post("/success", async (req, res) => {
-	if (req.session.user && email) {
+	if (req.session.user) {
 		const { email } = req.body;
 		try {
 			const user = await Users.findOne({ email: email });
